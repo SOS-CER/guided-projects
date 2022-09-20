@@ -1,0 +1,19 @@
+{% assign project = include.project %}
+{% assign grade-category = include.grade-category %}
+
+<table>
+  <tr>
+    <th>Item</th>
+    <th>Strong - 3 points</th>
+	<th>Adequate - 2 points</th>
+	<th>Inadequate - 1 point</th>
+  </tr>
+  {% for grade-item in site.data.grades.grades[project][grade-category] %}
+  <tr>
+    <td>{{ grade-item.item }}</td>
+    <td>{{ grade-item.strong }}</td>
+    <td>{{ grade-item.adequate }}</td>
+	<td>{{ grade-item.inadequate }}</td>
+  </tr>
+  {% endfor %}
+</table>

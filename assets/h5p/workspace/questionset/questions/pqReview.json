@@ -1,0 +1,463 @@
+{
+  "progressType": "dots",
+  "passPercentage": 100,
+  "questions": [
+    {
+      "params": {
+        "answers": [
+          {
+            "correct": true,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003ethe height of the heap\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003ewhether the heap is a minheap or maxheap\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003ethe number of nodes in the lowest level of the tree\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003ethe type of array used\u003c/div\u003e\n"
+          }
+        ],
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 99,
+            "feedback": "Please review the course materials."
+          },
+          {
+            "from": 100,
+            "to": 100,
+            "feedback": "Excellent!"
+          }
+        ],
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": false,
+          "enableCheckButton": true,
+          "type": "multi",
+          "singlePoint": true,
+          "randomAnswers": true,
+          "showSolutionsRequiresInput": true,
+          "disableImageZooming": false,
+          "confirmCheckDialog": false,
+          "confirmRetryDialog": false,
+          "autoCheck": false,
+          "passPercentage": 100,
+          "showScorePoints": true
+        },
+        "UI": {
+          "checkAnswerButton": "Check",
+          "showSolutionButton": "Show solution",
+          "tryAgainButton": "Retry",
+          "tipsLabel": "Show tip",
+          "scoreBarLabel": "You got :num out of :total points",
+          "tipAvailable": "Tip available",
+          "feedbackAvailable": "Feedback available",
+          "readFeedback": "Read feedback",
+          "wrongAnswer": "Wrong answer",
+          "correctAnswer": "Correct answer",
+          "shouldCheck": "Should have been checked",
+          "shouldNotCheck": "Should not have been checked",
+          "noInput": "Please answer before viewing the solution"
+        },
+        "confirmCheck": {
+          "header": "Finish ?",
+          "body": "Are you sure you wish to finish ?",
+          "cancelLabel": "Cancel",
+          "confirmLabel": "Finish"
+        },
+        "confirmRetry": {
+          "header": "Retry ?",
+          "body": "Are you sure you wish to retry ?",
+          "cancelLabel": "Cancel",
+          "confirmLabel": "Confirm"
+        },
+        "question": "\u003cp\u003eThe performance of heap operations is controlled by what property?\u003c/p\u003e\n",
+        "media": {
+          "library": "H5P.Image 1.1",
+          "params": {}
+        }
+      },
+      "library": "H5P.MultiChoice 1.13"
+    },
+    {
+      "params": {
+        "answers": [
+          {
+            "correct": true,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003ethe leftmost entry in the tree\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003ethe rightmost entry in the tree\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003ethe entry at the deepest level\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003ethe leftmost entry in the lowest level of the tre\u003c/div\u003e\n"
+          }
+        ],
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 99,
+            "feedback": "Please review the course materials."
+          },
+          {
+            "from": 100,
+            "to": 100,
+            "feedback": "Excellent!"
+          }
+        ],
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": false,
+          "enableCheckButton": true,
+          "type": "multi",
+          "singlePoint": true,
+          "randomAnswers": true,
+          "showSolutionsRequiresInput": true,
+          "disableImageZooming": false,
+          "confirmCheckDialog": false,
+          "confirmRetryDialog": false,
+          "autoCheck": false,
+          "passPercentage": 100,
+          "showScorePoints": true
+        },
+        "UI": {
+          "checkAnswerButton": "Check",
+          "showSolutionButton": "Show solution",
+          "tryAgainButton": "Retry",
+          "tipsLabel": "Show tip",
+          "scoreBarLabel": "You got :num out of :total points",
+          "tipAvailable": "Tip available",
+          "feedbackAvailable": "Feedback available",
+          "readFeedback": "Read feedback",
+          "wrongAnswer": "Wrong answer",
+          "correctAnswer": "Correct answer",
+          "shouldCheck": "Should have been checked",
+          "shouldNotCheck": "Should not have been checked",
+          "noInput": "Please answer before viewing the solution"
+        },
+        "confirmCheck": {
+          "header": "Finish ?",
+          "body": "Are you sure you wish to finish ?",
+          "cancelLabel": "Cancel",
+          "confirmLabel": "Finish"
+        },
+        "confirmRetry": {
+          "header": "Retry ?",
+          "body": "Are you sure you wish to retry ?",
+          "cancelLabel": "Cancel",
+          "confirmLabel": "Confirm"
+        },
+        "question": "\u003cp\u003eIf a \u003cem\u003ebinary search tree\u003c/em\u003e were used to implement the priority queue abstract data type, then \u003ccode\u003edeleteMin()\u003c/code\u003e would return which entry?\u003c/p\u003e\n",
+        "media": {
+          "library": "H5P.Image 1.1",
+          "params": {}
+        }
+      },
+      "library": "H5P.MultiChoice 1.13"
+    },
+    {
+      "params": {
+        "answers": [
+          {
+            "correct": true,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003eO(n log n)\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003eO(log n)\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003eO(n)\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003eO(n\u003csup\u003e2\u003c/sup\u003e)\u003c/div\u003e\n"
+          }
+        ],
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 99,
+            "feedback": "Please review the course materials."
+          },
+          {
+            "from": 100,
+            "to": 100,
+            "feedback": "Excellent!"
+          }
+        ],
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": false,
+          "enableCheckButton": true,
+          "type": "multi",
+          "singlePoint": true,
+          "randomAnswers": true,
+          "showSolutionsRequiresInput": true,
+          "disableImageZooming": false,
+          "confirmCheckDialog": false,
+          "confirmRetryDialog": false,
+          "autoCheck": false,
+          "passPercentage": 100,
+          "showScorePoints": true
+        },
+        "UI": {
+          "checkAnswerButton": "Check",
+          "showSolutionButton": "Show solution",
+          "tryAgainButton": "Retry",
+          "tipsLabel": "Show tip",
+          "scoreBarLabel": "You got :num out of :total points",
+          "tipAvailable": "Tip available",
+          "feedbackAvailable": "Feedback available",
+          "readFeedback": "Read feedback",
+          "wrongAnswer": "Wrong answer",
+          "correctAnswer": "Correct answer",
+          "shouldCheck": "Should have been checked",
+          "shouldNotCheck": "Should not have been checked",
+          "noInput": "Please answer before viewing the solution"
+        },
+        "confirmCheck": {
+          "header": "Finish ?",
+          "body": "Are you sure you wish to finish ?",
+          "cancelLabel": "Cancel",
+          "confirmLabel": "Finish"
+        },
+        "confirmRetry": {
+          "header": "Retry ?",
+          "body": "Are you sure you wish to retry ?",
+          "cancelLabel": "Cancel",
+          "confirmLabel": "Confirm"
+        },
+        "question": "\u003cp\u003eWhat is the worst-case performance of \u003cstrong\u003eheapsort\u003c/strong\u003e?\u003c/p\u003e\n",
+        "media": {
+          "library": "H5P.Image 1.1",
+          "params": {}
+        }
+      },
+      "library": "H5P.MultiChoice 1.13"
+    },
+    {
+      "params": {
+        "answers": [
+          {
+            "correct": true,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003eadaptable priority queue\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003epriority queue\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003emap\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003elist\u003c/div\u003e\n"
+          }
+        ],
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 99,
+            "feedback": "Please review the course materials."
+          },
+          {
+            "from": 100,
+            "to": 100,
+            "feedback": "Excellent!"
+          }
+        ],
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": false,
+          "enableCheckButton": true,
+          "type": "multi",
+          "singlePoint": true,
+          "randomAnswers": true,
+          "showSolutionsRequiresInput": true,
+          "disableImageZooming": false,
+          "confirmCheckDialog": false,
+          "confirmRetryDialog": false,
+          "autoCheck": false,
+          "passPercentage": 100,
+          "showScorePoints": true
+        },
+        "UI": {
+          "checkAnswerButton": "Check",
+          "showSolutionButton": "Show solution",
+          "tryAgainButton": "Retry",
+          "tipsLabel": "Show tip",
+          "scoreBarLabel": "You got :num out of :total points",
+          "tipAvailable": "Tip available",
+          "feedbackAvailable": "Feedback available",
+          "readFeedback": "Read feedback",
+          "wrongAnswer": "Wrong answer",
+          "correctAnswer": "Correct answer",
+          "shouldCheck": "Should have been checked",
+          "shouldNotCheck": "Should not have been checked",
+          "noInput": "Please answer before viewing the solution"
+        },
+        "confirmCheck": {
+          "header": "Finish ?",
+          "body": "Are you sure you wish to finish ?",
+          "cancelLabel": "Cancel",
+          "confirmLabel": "Finish"
+        },
+        "confirmRetry": {
+          "header": "Retry ?",
+          "body": "Are you sure you wish to retry ?",
+          "cancelLabel": "Cancel",
+          "confirmLabel": "Confirm"
+        },
+        "question": "\u003cp\u003eWhich \u003cem\u003eabstract data type\u003c/em\u003e would be most appropriate to model the following scenario: \u003cbr\u003eCustomers call a customer service hotline and stay on hold an average of 48 minutes. Customers are serviced in order of their reward credit card status (platinum, gold, silver, bronze, and regular tier statuses) and the time their call to customer service was placed. Consumers can decide to hang up at any time if they do not wish to wait on hold.\u003c/p\u003e\n",
+        "media": {
+          "library": "H5P.Image 1.1",
+          "params": {}
+        }
+      },
+      "library": "H5P.MultiChoice 1.13"
+    }
+  ],
+  "introPage": {
+    "showIntroPage": false,
+    "startButtonText": "Start Quiz",
+    "introduction": ""
+  },
+  "texts": {
+    "prevButton": "Previous",
+    "nextButton": "Next",
+    "finishButton": "Finish",
+    "textualProgress": "Question: @current of @total questions",
+    "questionLabel": "Question",
+    "jumpToQuestion": "Jump to question %d",
+    "readSpeakerProgress": "Question @current of @total",
+    "unansweredText": "Unanswered",
+    "answeredText": "Answered",
+    "currentQuestionText": "Current question"
+  },
+  "endGame": {
+    "showResultPage": true,
+    "solutionButtonText": "Show solution",
+    "finishButtonText": "Finish",
+    "showAnimations": false,
+    "skippable": false,
+    "skipButtonText": "Skip video",
+    "message": "Your result:",
+    "retryButtonText": "Retry",
+    "noResultMessage": "Finished",
+    "overallFeedback": [
+      {
+        "from": 0,
+        "to": 100,
+        "feedback": "You got @score points of @total possible."
+      }
+    ],
+    "oldFeedback": {
+      "successGreeting": "Congratulations!",
+      "successComment": "Excellent work!",
+      "failGreeting": "Oh, no!",
+      "failComment": "Please review the lab and/or course materials, visit office hours, or post on Piazza."
+    },
+    "showSolutionButton": false
+  },
+  "override": {
+    "showSolutionButton": "off",
+    "retryButton": "off",
+    "checkButton": true
+  },
+  "disableBackwardsNavigation": false,
+  "randomQuestions": false
+}

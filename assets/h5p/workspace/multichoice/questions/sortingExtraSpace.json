@@ -1,0 +1,122 @@
+{  
+    "answers":[  
+		        {  
+            "correct":true,
+            "tipsAndFeedback":{  
+                "tip":"",
+                "chosenFeedback":"",
+                "notChosenFeedback":""
+            },
+            "text":"<div>counting sort<\/div>\n"
+        },        {  
+            "correct":true,
+            "tipsAndFeedback":{  
+                "tip":"",
+                "chosenFeedback":"",
+                "notChosenFeedback":""
+            },
+            "text":"<div>radix sort<\/div>\n"
+        },        {  
+            "correct":false,
+            "tipsAndFeedback":{  
+                "tip":"",
+                "chosenFeedback":"",
+                "notChosenFeedback":""
+            },
+            "text":"<div>insertion sort<\/div>\n"
+        },        {  
+            "correct":false,
+            "tipsAndFeedback":{  
+                "tip":"",
+                "chosenFeedback":"",
+                "notChosenFeedback":""
+            },
+            "text":"<div>selection sort<\/div>\n"
+        },        {  
+            "correct":false,
+            "tipsAndFeedback":{  
+                "tip":"",
+                "chosenFeedback":"",
+                "notChosenFeedback":""
+            },
+            "text":"<div>bubble sort<\/div>\n"
+        },        {  
+            "correct":false,
+            "tipsAndFeedback":{  
+                "tip":"",
+                "chosenFeedback":"",
+                "notChosenFeedback":""
+            },
+            "text":"<div>bogosort<\/div>\n"
+        },        {  
+            "correct":false,
+            "tipsAndFeedback":{  
+                "tip":"",
+                "chosenFeedback":"",
+                "notChosenFeedback":""
+            },
+            "text":"<div>selection sort<\/div>\n"
+        }   
+    ],
+    "overallFeedback":[  
+        {  
+            "from":0,
+            "to":99,
+            "feedback":"Please review the course materials."
+        },
+        {  
+            "from":100,
+            "to":100,
+            "feedback":"Excellent!"
+        }
+    ],
+    "behaviour":{  
+        "enableRetry":true,
+        "enableSolutionsButton":false,
+        "enableCheckButton":true,
+        "type":"multi",
+        "singlePoint":false,
+        "randomAnswers":true,
+        "showSolutionsRequiresInput":true,
+        "disableImageZooming":false,
+        "confirmCheckDialog":false,
+        "confirmRetryDialog":false,
+        "autoCheck":false,
+        "passPercentage":100,
+        "showScorePoints":true
+    },
+    "UI":{  
+        "checkAnswerButton":"Check",
+        "showSolutionButton":"Show solution",
+        "tryAgainButton":"Retry",
+        "tipsLabel":"Show tip",
+        "scoreBarLabel":"You got :num out of :total points",
+        "tipAvailable":"Tip available",
+        "feedbackAvailable":"Feedback available",
+        "readFeedback":"Read feedback",
+        "wrongAnswer":"Wrong answer",
+        "correctAnswer":"Correct answer",
+        "shouldCheck":"Should have been checked",
+        "shouldNotCheck":"Should not have been checked",
+        "noInput":"Please answer before viewing the solution"
+    },
+    "confirmCheck":{  
+        "header":"Finish ?",
+        "body":"Are you sure you wish to finish ?",
+        "cancelLabel":"Cancel",
+        "confirmLabel":"Finish"
+    },
+    "confirmRetry":{  
+        "header":"Retry ?",
+        "body":"Are you sure you wish to retry ?",
+        "cancelLabel":"Cancel",
+        "confirmLabel":"Confirm"
+    },
+    "question":"<p>Which of the following sorting algorithms require extra <em>space<\/em> beyond the original input array of elements?<\/p>\n",
+    "media":{  
+        "params":{  
+
+        }
+    }
+}
+

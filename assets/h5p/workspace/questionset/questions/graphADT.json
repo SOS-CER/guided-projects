@@ -1,0 +1,637 @@
+{
+  "progressType": "dots",
+  "passPercentage": 100,
+  "questions": [
+    {
+      "params": {
+        "answers": [
+          {
+            "correct": true,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003e{cat, bird}, {horse, snake}, {lizard, mouse}\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003e(cat, bird), (horse, snake), (lizard, mouse)\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003e{cat}, {bird}, {horse}, {snake}, {lizard}, {mouse}\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003e(cat), (bird), (horse), (snake), (lizard), (mouse)\u003c/div\u003e\n"
+          }
+        ],
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 99,
+            "feedback": "Please review the course materials."
+          },
+          {
+            "from": 100,
+            "to": 100,
+            "feedback": "Excellent!"
+          }
+        ],
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": false,
+          "enableCheckButton": true,
+          "type": "multi",
+          "singlePoint": true,
+          "randomAnswers": true,
+          "showSolutionsRequiresInput": true,
+          "disableImageZooming": false,
+          "confirmCheckDialog": false,
+          "confirmRetryDialog": false,
+          "autoCheck": false,
+          "passPercentage": 100,
+          "showScorePoints": true
+        },
+        "UI": {
+          "checkAnswerButton": "Check",
+          "showSolutionButton": "Show solution",
+          "tryAgainButton": "Retry",
+          "tipsLabel": "Show tip",
+          "scoreBarLabel": "You got :num out of :total points",
+          "tipAvailable": "Tip available",
+          "feedbackAvailable": "Feedback available",
+          "readFeedback": "Read feedback",
+          "wrongAnswer": "Wrong answer",
+          "correctAnswer": "Correct answer",
+          "shouldCheck": "Should have been checked",
+          "shouldNotCheck": "Should not have been checked",
+          "noInput": "Please answer before viewing the solution"
+        },
+        "confirmCheck": {
+          "header": "Finish ?",
+          "body": "Are you sure you wish to finish ?",
+          "cancelLabel": "Cancel",
+          "confirmLabel": "Finish"
+        },
+        "confirmRetry": {
+          "header": "Retry ?",
+          "body": "Are you sure you wish to retry ?",
+          "cancelLabel": "Cancel",
+          "confirmLabel": "Confirm"
+        },
+        "question": "\u003cp\u003eWhich of the following correctly describe(s) edges that exist in this graph?\u003c/p\u003e\n",
+        "media": {
+          "library": "H5P.Image 1.1",
+          "params": {
+            "contentName": "Image",
+            "alt": "Image for the question: Which of the following correctly describe(s) edges that exist in this graph?",
+            "file": {
+              "path": "../../images/animalGraph.png",
+              "mime": "image/png",
+              "width": 200,
+              "height": 200
+            }
+          }
+        }
+      },
+      "library": "H5P.MultiChoice 1.13"
+    },
+    {
+      "params": {
+        "answers": [
+          {
+            "correct": true,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003e4\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003e3\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003e2\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003e1\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003e5\u003c/div\u003e\n"
+          }
+        ],
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 99,
+            "feedback": "Please review the course materials."
+          },
+          {
+            "from": 100,
+            "to": 100,
+            "feedback": "Excellent!"
+          }
+        ],
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": false,
+          "enableCheckButton": true,
+          "type": "multi",
+          "singlePoint": true,
+          "randomAnswers": true,
+          "showSolutionsRequiresInput": true,
+          "disableImageZooming": false,
+          "confirmCheckDialog": false,
+          "confirmRetryDialog": false,
+          "autoCheck": false,
+          "passPercentage": 100,
+          "showScorePoints": true
+        },
+        "UI": {
+          "checkAnswerButton": "Check",
+          "showSolutionButton": "Show solution",
+          "tryAgainButton": "Retry",
+          "tipsLabel": "Show tip",
+          "scoreBarLabel": "You got :num out of :total points",
+          "tipAvailable": "Tip available",
+          "feedbackAvailable": "Feedback available",
+          "readFeedback": "Read feedback",
+          "wrongAnswer": "Wrong answer",
+          "correctAnswer": "Correct answer",
+          "shouldCheck": "Should have been checked",
+          "shouldNotCheck": "Should not have been checked",
+          "noInput": "Please answer before viewing the solution"
+        },
+        "confirmCheck": {
+          "header": "Finish ?",
+          "body": "Are you sure you wish to finish ?",
+          "cancelLabel": "Cancel",
+          "confirmLabel": "Finish"
+        },
+        "confirmRetry": {
+          "header": "Retry ?",
+          "body": "Are you sure you wish to retry ?",
+          "cancelLabel": "Cancel",
+          "confirmLabel": "Confirm"
+        },
+        "question": "\u003cp\u003eWhich of the following correctly describe(s) what could be returned by \u003ccode\u003egraph.outDegree(Vertex[snake])\u003c/code\u003e?\u003c/p\u003e\n",
+        "media": {
+          "library": "H5P.Image 1.1",
+          "params": {
+            "contentName": "Image",
+            "alt": "Image for the question: Which of the following correctly describe(s) what could be returned by \u003ccode\u003egraph.outDegree(Vertex[snake])\u003c/code\u003e?",
+            "file": {
+              "path": "../../images/animalGraph.png",
+              "mime": "image/png",
+              "width": 200,
+              "height": 200
+            }
+          }
+        }
+      },
+      "library": "H5P.MultiChoice 1.13"
+    },
+    {
+      "params": {
+        "answers": [
+          {
+            "correct": true,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003e{bird, tiger}, {squirrel, tiger}\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003e(bird, tiger), (squirrel, tiger)\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003e{bird}, {squirrel}\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003e(bird), (squirrel)\u003c/div\u003e\n"
+          }
+        ],
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 99,
+            "feedback": "Please review the course materials."
+          },
+          {
+            "from": 100,
+            "to": 100,
+            "feedback": "Excellent!"
+          }
+        ],
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": false,
+          "enableCheckButton": true,
+          "type": "multi",
+          "singlePoint": true,
+          "randomAnswers": true,
+          "showSolutionsRequiresInput": true,
+          "disableImageZooming": false,
+          "confirmCheckDialog": false,
+          "confirmRetryDialog": false,
+          "autoCheck": false,
+          "passPercentage": 100,
+          "showScorePoints": true
+        },
+        "UI": {
+          "checkAnswerButton": "Check",
+          "showSolutionButton": "Show solution",
+          "tryAgainButton": "Retry",
+          "tipsLabel": "Show tip",
+          "scoreBarLabel": "You got :num out of :total points",
+          "tipAvailable": "Tip available",
+          "feedbackAvailable": "Feedback available",
+          "readFeedback": "Read feedback",
+          "wrongAnswer": "Wrong answer",
+          "correctAnswer": "Correct answer",
+          "shouldCheck": "Should have been checked",
+          "shouldNotCheck": "Should not have been checked",
+          "noInput": "Please answer before viewing the solution"
+        },
+        "confirmCheck": {
+          "header": "Finish ?",
+          "body": "Are you sure you wish to finish ?",
+          "cancelLabel": "Cancel",
+          "confirmLabel": "Finish"
+        },
+        "confirmRetry": {
+          "header": "Retry ?",
+          "body": "Are you sure you wish to retry ?",
+          "cancelLabel": "Cancel",
+          "confirmLabel": "Confirm"
+        },
+        "question": "\u003cp\u003eWhich of the following correctly describe(s) what could be returned by \u003ccode\u003egraph.incomingEdges(Vertex[tiger])\u003c/code\u003e?\u003c/p\u003e\n",
+        "media": {
+          "library": "H5P.Image 1.1",
+          "params": {
+            "contentName": "Image",
+            "alt": "Image for the question: Which of the following correctly describe(s) what could be returned by \u003ccode\u003egraph.incomingEdges(Vertex[tiger])\u003c/code\u003e?",
+            "file": {
+              "path": "../../images/animalGraph.png",
+              "mime": "image/png",
+              "width": 200,
+              "height": 200
+            }
+          }
+        }
+      },
+      "library": "H5P.MultiChoice 1.13"
+    },
+    {
+      "params": {
+        "answers": [
+          {
+            "correct": true,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003eVertex[lion]\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003elion\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003eVertex[lizard]\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003eVertex[bird]\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003ebird\u003c/div\u003e\n"
+          }
+        ],
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 99,
+            "feedback": "Please review the course materials."
+          },
+          {
+            "from": 100,
+            "to": 100,
+            "feedback": "Excellent!"
+          }
+        ],
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": false,
+          "enableCheckButton": true,
+          "type": "multi",
+          "singlePoint": true,
+          "randomAnswers": true,
+          "showSolutionsRequiresInput": true,
+          "disableImageZooming": false,
+          "confirmCheckDialog": false,
+          "confirmRetryDialog": false,
+          "autoCheck": false,
+          "passPercentage": 100,
+          "showScorePoints": true
+        },
+        "UI": {
+          "checkAnswerButton": "Check",
+          "showSolutionButton": "Show solution",
+          "tryAgainButton": "Retry",
+          "tipsLabel": "Show tip",
+          "scoreBarLabel": "You got :num out of :total points",
+          "tipAvailable": "Tip available",
+          "feedbackAvailable": "Feedback available",
+          "readFeedback": "Read feedback",
+          "wrongAnswer": "Wrong answer",
+          "correctAnswer": "Correct answer",
+          "shouldCheck": "Should have been checked",
+          "shouldNotCheck": "Should not have been checked",
+          "noInput": "Please answer before viewing the solution"
+        },
+        "confirmCheck": {
+          "header": "Finish ?",
+          "body": "Are you sure you wish to finish ?",
+          "cancelLabel": "Cancel",
+          "confirmLabel": "Finish"
+        },
+        "confirmRetry": {
+          "header": "Retry ?",
+          "body": "Are you sure you wish to retry ?",
+          "cancelLabel": "Cancel",
+          "confirmLabel": "Confirm"
+        },
+        "question": "\u003cp\u003eWhich of the following correctly describe(s) what would be output by the following:\u003cbr\u003eEdge x \u003d \u003ccode\u003egraph.getEdge(Vertex[lion],Vertex[cat])\u003cbr\u003eprint( graph.opposite(Vertex[cat],x) )\u003c/code\u003e?\u003c/p\u003e\n",
+        "media": {
+          "library": "H5P.Image 1.1",
+          "params": {
+            "contentName": "Image",
+            "alt": "Image for the question: Which of the following correctly describe(s) what would be output by the following:\u003cbr\u003eEdge x \u003d \u003ccode\u003egraph.getEdge(Vertex[lion],Vertex[cat])\u003cbr\u003eprint( graph.opposite(Vertex[cat],x) )\u003c/code\u003e?",
+            "file": {
+              "path": "../../images/animalGraph.png",
+              "mime": "image/png",
+              "width": 200,
+              "height": 200
+            }
+          }
+        }
+      },
+      "library": "H5P.MultiChoice 1.13"
+    },
+    {
+      "params": {
+        "answers": [
+          {
+            "correct": true,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003eVertex[mouse]\u003c/div\u003e\n"
+          },
+          {
+            "correct": true,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003e{mouse, snake}, {mouse, lizard}\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003e(mouse, snake), (lizard, mouse)\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003eVertex[snake]\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003eVertex[lizard]\u003c/div\u003e\n"
+          }
+        ],
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 99,
+            "feedback": "Please review the course materials."
+          },
+          {
+            "from": 100,
+            "to": 100,
+            "feedback": "Excellent!"
+          }
+        ],
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": false,
+          "enableCheckButton": true,
+          "type": "multi",
+          "singlePoint": false,
+          "randomAnswers": true,
+          "showSolutionsRequiresInput": true,
+          "disableImageZooming": false,
+          "confirmCheckDialog": false,
+          "confirmRetryDialog": false,
+          "autoCheck": false,
+          "passPercentage": 100,
+          "showScorePoints": true
+        },
+        "UI": {
+          "checkAnswerButton": "Check",
+          "showSolutionButton": "Show solution",
+          "tryAgainButton": "Retry",
+          "tipsLabel": "Show tip",
+          "scoreBarLabel": "You got :num out of :total points",
+          "tipAvailable": "Tip available",
+          "feedbackAvailable": "Feedback available",
+          "readFeedback": "Read feedback",
+          "wrongAnswer": "Wrong answer",
+          "correctAnswer": "Correct answer",
+          "shouldCheck": "Should have been checked",
+          "shouldNotCheck": "Should not have been checked",
+          "noInput": "Please answer before viewing the solution"
+        },
+        "confirmCheck": {
+          "header": "Finish ?",
+          "body": "Are you sure you wish to finish ?",
+          "cancelLabel": "Cancel",
+          "confirmLabel": "Finish"
+        },
+        "confirmRetry": {
+          "header": "Retry ?",
+          "body": "Are you sure you wish to retry ?",
+          "cancelLabel": "Cancel",
+          "confirmLabel": "Confirm"
+        },
+        "question": "\u003cp\u003eWhat would be removed from the graph if we perform \u003ccode\u003egraph.removeVertex(Vertex[mouse])\u003c/code\u003e?\u003c/p\u003e\n",
+        "media": {
+          "library": "H5P.Image 1.1",
+          "params": {
+            "contentName": "Image",
+            "alt": "Image for the question: What would be removed from the graph if we perform \u003ccode\u003egraph.removeVertex(Vertex[mouse])\u003c/code\u003e?",
+            "file": {
+              "path": "../../images/animalGraph.png",
+              "mime": "image/png",
+              "width": 200,
+              "height": 200
+            }
+          }
+        }
+      },
+      "library": "H5P.MultiChoice 1.13"
+    }
+  ],
+  "introPage": {
+    "showIntroPage": false,
+    "startButtonText": "Start Quiz",
+    "introduction": ""
+  },
+  "texts": {
+    "prevButton": "Previous",
+    "nextButton": "Next",
+    "finishButton": "Finish",
+    "textualProgress": "Question: @current of @total questions",
+    "questionLabel": "Question",
+    "jumpToQuestion": "Jump to question %d",
+    "readSpeakerProgress": "Question @current of @total",
+    "unansweredText": "Unanswered",
+    "answeredText": "Answered",
+    "currentQuestionText": "Current question"
+  },
+  "endGame": {
+    "showResultPage": true,
+    "solutionButtonText": "Show solution",
+    "finishButtonText": "Finish",
+    "showAnimations": false,
+    "skippable": false,
+    "skipButtonText": "Skip video",
+    "message": "Your result:",
+    "retryButtonText": "Retry",
+    "noResultMessage": "Finished",
+    "overallFeedback": [
+      {
+        "from": 0,
+        "to": 100,
+        "feedback": "You got @score points of @total possible."
+      }
+    ],
+    "oldFeedback": {
+      "successGreeting": "Congratulations!",
+      "successComment": "Excellent work!",
+      "failGreeting": "Oh, no!",
+      "failComment": "Please review the lab and/or course materials, visit office hours, or post on Piazza."
+    },
+    "showSolutionButton": false
+  },
+  "override": {
+    "showSolutionButton": "off",
+    "retryButton": "off",
+    "checkButton": true
+  },
+  "disableBackwardsNavigation": false,
+  "randomQuestions": false
+}

@@ -1,0 +1,22 @@
+{% if collapseID %}
+{% assign collapseID = collapseID %}
+{% else %}
+{% assign collapseID = 1 %}
+{% endif %}
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <span class="glyphicon glyphicon-down-bracket" data-alt="Open the expand box"></span><a data-toggle="collapse" data-parent="#accordion" href="#collapse{{collapseID}}">
+          {{include.title}}
+        </a>
+      </h4>
+    </div>
+    <div id="collapse{{collapseID}}" class="panel-collapse collapse">
+      <div class="panel-body">
+        {{ include.content | markdownify }}
+      </div>
+    </div>
+  </div>
+</div> 
+{% assign collapseID = collapseID | plus: 1 %}

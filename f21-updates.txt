@@ -1,0 +1,150 @@
+GP/Lab Bugs: https://docs.google.com/spreadsheets/d/1rvPrapxvcF_CRZacMk3P5sJOpKjfYlLTDv2bOkdanhg/edit#gid=0
+
+Fall 2021 Plan: evernote:///view/17289384/s155/915907b2-ed1a-f860-761e-b6074381f13c/06d26d6f-aef7-09b0-fa12-916064d8ddb8
+
+# WolfScheduler
+DONE - update UC6 alternative flows to match error messages in the code base - this will be for GP2
+- Check the System test plans for GP2 and GP3
+
+
+# GP1
+DONE - gp1-eclipse-intro - no difference
+DONE - gp1-create-project - no difference
+DONE - gp1-github - no difference
+  DONE - update screenshot of GitHub repository (org is fall 2020)
+DONE - gp1-source-gen - no difference
+DONE - gp1-reduce-redundancy - no difference
+DONE - gp1-unit-test-intro 
+  DONE - changes for JUnit 5
+  DONE - update the screenshot to show JUnit 5 in the Build Path
+  DONE - update run test screenshot
+DONE - gp1-static-analysis - no difference
+  DONE - Update Run PMD to PMD
+  DONE - Update discussion on the metadata files and using .gitignore - especially useful for teams
+DONE - gp1-course
+   DONE - Update to JUnit5 course file
+   DONE - Reminder that constants are (in this case) private static and final
+   DONE - look at suggested change regarding the tests and GUI (row27)
+		REJECT - consider the constructor with zeros as per the reduce-redundancy page
+		CHANGES
+			- Added a conditional in setMeetingDaysAndTime to check if the start/end times are nonzero if meeting days is 'A'.
+			- Move test with A, 1330, 1445 to invalid - should now throw an exception
+			- Need to update in teaching staff tests for GP3 and labs (only one failing test to update - can either do by removing (and not checking) and/or adding to the invalid checks)
+   DONE - look at update to setName() pseudo code (row 29)
+   DONE - fix typos in the setInstructorId() section
+	  DONE - Requirements: Course Instructor
+	  DONE - list tests
+DONE - gp1-code-editing - no difference
+DONE - gp1-quick-fix - no difference
+DONE - gp1-file-test - no difference
+DONE - gp1-libraries - no difference
+DONE - gp1-courserecordio - no difference
+DONE - gp1-scheduler - no difference
+DONE - gp1-wolfschedulergui - no difference
+DONE - gp1-stp - no difference
+   DONE - Replace 8 with 13
+DONE - gp1-javadoc - no difference
+DONE - gp1-jenkins - no difference
+DONE - gp1-conclusion - no difference
+
+Code Changes
+DONE - Look at row 28 in suggested changes
+DONE - Look at row 29 in suggested changes
+DONE - Any updates to CourseTest.java
+
+Final TODOs
+DONE - Copy over updated versions of any provided files!
+
+
+# GP2
+DONE - index
+DONE - gp2-repo
+DONE - gp2-hierarchy
+DONE - gp2-super-class
+DONE - gp2-event
+	DONE - need to update links to tests and associated files at the end
+DONE - gp2-debugger
+DONE - gp2-activityrecordio
+DONE - gp2-wolfscheduler
+DONE - gp2-submit
+ 
+DONE Check the display information at the end of GP2 and update UC1 if needed.
+ 
+
+DONE System Test Plan
+DONE - look at test 15 as per row 31
+DONE - Look at test 2 as per row 32 - also update unit tests
+
+# GP3
+## Code Changes
+DONE - Update teaching staff tests to use at least the provided JUnit 5 tests.
+DONE - Update CourseTest so that the A, 1330, 1445 test throws an exception
+DONE - Update Course.setMeetingDaysAndTime has the following check if arranged
+			if (startTime != 0 || endTime != 0) {
+        		throw new IllegalArgumentException("Invalid meeting days and times.");
+        	}
+			
+DONE - index
+DONE - gp3-repo
+DONE - gp3-stp
+DONE - gp3-conflict-interface
+	DONE - update class diagram
+DONE - gp3-conflictexception
+DONE - gp3-tdd
+DONE - gp3-activity
+DONE - gp3-coverage
+DONE - gp3-wolfscheduler
+DONE - gp3-wolfschedulergui
+DONE - gp3-submit
+ 
+
+System Test Plan
+DONE - look at test 15 as per row 31
+DONE - Look at test 2 as per row 32 - also update unit tests
+ 
+ 
+# Lab Changes 
+- Comment out Jenkins Certificate Warnings on index pages.
+- Add something about considering commit message quality in out of lab commits
+
+
+Lab 02
+DONE - Update links on 02-lab-student.md page
+
+Starting with Lab 4 when Course comes into play
+- Update CourseTest so that the A, 1330, 1445 test throws an exception
+- Update Course.setMeetingDaysAndTime has the following check if arranged
+			if (startTime != 0 || endTime != 0) {
+        		throw new IllegalArgumentException("Invalid meeting days and times.");
+        	}
+			
+			
+# General Updates
+- Change "ball" to "check" or "X" or "!" as appropriate.
+
+# GitHub Lab updates
+{% capture reminder-content %} 
+GitHub Resources:
+
+  * [Staging Files](https://pages.github.ncsu.edu/engr-csc-software-development/practices-tools/git/git-staging)
+  * [Committing Files](https://pages.github.ncsu.edu/engr-csc-software-development/practices-tools/git/git-commit)
+  * [Pushing Files](https://pages.github.ncsu.edu/engr-csc-software-development/practices-tools/git/git-push)
+{% endcapture %} {% include mention.html content=reminder-content type="reminder" title="Reference: Staging and Pushing to GitHub"%} 
+
+# Jenkins Lab updates
+{% capture reminder-content %}
+Check the following items on Jenkins for [your last build](https://pages.github.ncsu.edu/engr-csc-software-development/practices-tools/jenkins/#build-summary-page) and use the results to [estimate your grade](https://pages.github.ncsu.edu/engr-csc-software-development/practices-tools/jenkins/#grade-estimation-example):
+
+  * [Test Results](https://pages.github.ncsu.edu/engr-csc-software-development/practices-tools/jenkins/#test-results)
+  * [Coverage Report](https://pages.github.ncsu.edu/engr-csc-software-development/practices-tools/jenkins/#coverage-report)
+  * [FindBugs Report](https://pages.github.ncsu.edu/engr-csc-software-development/practices-tools/jenkins/#findbugs-report)
+  * [CheckStyle Report](https://pages.github.ncsu.edu/engr-csc-software-development/practices-tools/jenkins/#checkstyle-report)
+  * [PMD Report](https://pages.github.ncsu.edu/engr-csc-software-development/practices-tools/jenkins/#pmd-report)
+{% endcapture %}
+{% include mention.html content=reminder-content icon="ciTool" type="reminder" title="Reminder: Interpreting Jenkins" %}
+
+# Javadoc Lab Updates
+{% capture callout_content %}
+To generate Javadoc, you need to [configure and run the Javadoc tool](https://pages.github.ncsu.edu/engr-csc216/guided-projects/gp1/gp1-javadoc#configure-and-run-javadoc-for-your-project), [fix Javadoc errors and warnings](https://pages.github.ncsu.edu/engr-csc216/guided-projects/gp1/gp1-javadoc#fix-javadoc-errors-and-warnings), and [check the generated Javadoc pages](https://pages.github.ncsu.edu/engr-csc216/guided-projects/gp1/gp1-javadoc#check-generated-javadoc-pages).  Make sure you push your changes to GitHub!
+{% endcapture %}
+{% include mention.html content=callout_content icon="dtTool" type="reminder" title="Reminder: Generating Javadoc" %}

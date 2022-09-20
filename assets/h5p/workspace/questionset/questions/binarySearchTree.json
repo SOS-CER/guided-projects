@@ -1,0 +1,793 @@
+{
+  "progressType": "dots",
+  "passPercentage": 100,
+  "questions": [
+    {
+      "params": {
+        "answers": [
+          {
+            "correct": true,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003enode 5\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003enode 4\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003enode 3\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003enode 6\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003enode 7\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003enode 8\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003enode 1\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003enode 2\u003c/div\u003e\n"
+          }
+        ],
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 99,
+            "feedback": "Please review the course materials."
+          },
+          {
+            "from": 100,
+            "to": 100,
+            "feedback": "Excellent!"
+          }
+        ],
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": false,
+          "enableCheckButton": true,
+          "type": "multi",
+          "singlePoint": true,
+          "randomAnswers": true,
+          "showSolutionsRequiresInput": true,
+          "disableImageZooming": false,
+          "confirmCheckDialog": false,
+          "confirmRetryDialog": false,
+          "autoCheck": false,
+          "passPercentage": 100,
+          "showScorePoints": true
+        },
+        "UI": {
+          "checkAnswerButton": "Check",
+          "showSolutionButton": "Show solution",
+          "tryAgainButton": "Retry",
+          "tipsLabel": "Show tip",
+          "scoreBarLabel": "You got :num out of :total points",
+          "tipAvailable": "Tip available",
+          "feedbackAvailable": "Feedback available",
+          "readFeedback": "Read feedback",
+          "wrongAnswer": "Wrong answer",
+          "correctAnswer": "Correct answer",
+          "shouldCheck": "Should have been checked",
+          "shouldNotCheck": "Should not have been checked",
+          "noInput": "Please answer before viewing the solution"
+        },
+        "confirmCheck": {
+          "header": "Finish ?",
+          "body": "Are you sure you wish to finish ?",
+          "cancelLabel": "Cancel",
+          "confirmLabel": "Finish"
+        },
+        "confirmRetry": {
+          "header": "Retry ?",
+          "body": "Are you sure you wish to retry ?",
+          "cancelLabel": "Cancel",
+          "confirmLabel": "Confirm"
+        },
+        "question": "\u003cp\u003eWhere would \"hyena\" be inserted into the binary search tree?\u003c/p\u003e\n",
+        "media": {
+          "library": "H5P.Image 1.1",
+          "params": {
+            "contentName": "Image",
+            "alt": "Image for the question: Where would \"hyena\" be inserted into the binary search tree?",
+            "file": {
+              "path": "../../images/animalBSTinsert.png",
+              "mime": "image/png",
+              "width": 200,
+              "height": 200
+            }
+          }
+        }
+      },
+      "library": "H5P.MultiChoice 1.13"
+    },
+    {
+      "params": {
+        "answers": [
+          {
+            "correct": true,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003eiguana\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003ekoala\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003eelk\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003elizard\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003ecat\u003c/div\u003e\n"
+          }
+        ],
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 99,
+            "feedback": "Please review the course materials."
+          },
+          {
+            "from": 100,
+            "to": 100,
+            "feedback": "Excellent!"
+          }
+        ],
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": false,
+          "enableCheckButton": true,
+          "type": "multi",
+          "singlePoint": true,
+          "randomAnswers": true,
+          "showSolutionsRequiresInput": true,
+          "disableImageZooming": false,
+          "confirmCheckDialog": false,
+          "confirmRetryDialog": false,
+          "autoCheck": false,
+          "passPercentage": 100,
+          "showScorePoints": true
+        },
+        "UI": {
+          "checkAnswerButton": "Check",
+          "showSolutionButton": "Show solution",
+          "tryAgainButton": "Retry",
+          "tipsLabel": "Show tip",
+          "scoreBarLabel": "You got :num out of :total points",
+          "tipAvailable": "Tip available",
+          "feedbackAvailable": "Feedback available",
+          "readFeedback": "Read feedback",
+          "wrongAnswer": "Wrong answer",
+          "correctAnswer": "Correct answer",
+          "shouldCheck": "Should have been checked",
+          "shouldNotCheck": "Should not have been checked",
+          "noInput": "Please answer before viewing the solution"
+        },
+        "confirmCheck": {
+          "header": "Finish ?",
+          "body": "Are you sure you wish to finish ?",
+          "cancelLabel": "Cancel",
+          "confirmLabel": "Finish"
+        },
+        "confirmRetry": {
+          "header": "Retry ?",
+          "body": "Are you sure you wish to retry ?",
+          "cancelLabel": "Cancel",
+          "confirmLabel": "Confirm"
+        },
+        "question": "\u003cp\u003eWhat would be the new root element if \u003ccode\u003etree.remove(\"horse\")\u003c/code\u003e were performed?\u003c/p\u003e\n",
+        "media": {
+          "library": "H5P.Image 1.1",
+          "params": {
+            "contentName": "Image",
+            "alt": "Image for the question: What would be the new root element if \u003ccode\u003etree.remove(\"horse\")\u003c/code\u003e were performed?",
+            "file": {
+              "path": "../../images/animalBST.png",
+              "mime": "image/png",
+              "width": 200,
+              "height": 200
+            }
+          }
+        }
+      },
+      "library": "H5P.MultiChoice 1.13"
+    },
+    {
+      "params": {
+        "answers": [
+          {
+            "correct": true,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003ekoala\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003eiguana\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003eelk\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003elizard\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003ecat\u003c/div\u003e\n"
+          }
+        ],
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 99,
+            "feedback": "Please review the course materials."
+          },
+          {
+            "from": 100,
+            "to": 100,
+            "feedback": "Excellent!"
+          }
+        ],
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": false,
+          "enableCheckButton": true,
+          "type": "multi",
+          "singlePoint": true,
+          "randomAnswers": true,
+          "showSolutionsRequiresInput": true,
+          "disableImageZooming": false,
+          "confirmCheckDialog": false,
+          "confirmRetryDialog": false,
+          "autoCheck": false,
+          "passPercentage": 100,
+          "showScorePoints": true
+        },
+        "UI": {
+          "checkAnswerButton": "Check",
+          "showSolutionButton": "Show solution",
+          "tryAgainButton": "Retry",
+          "tipsLabel": "Show tip",
+          "scoreBarLabel": "You got :num out of :total points",
+          "tipAvailable": "Tip available",
+          "feedbackAvailable": "Feedback available",
+          "readFeedback": "Read feedback",
+          "wrongAnswer": "Wrong answer",
+          "correctAnswer": "Correct answer",
+          "shouldCheck": "Should have been checked",
+          "shouldNotCheck": "Should not have been checked",
+          "noInput": "Please answer before viewing the solution"
+        },
+        "confirmCheck": {
+          "header": "Finish ?",
+          "body": "Are you sure you wish to finish ?",
+          "cancelLabel": "Cancel",
+          "confirmLabel": "Finish"
+        },
+        "confirmRetry": {
+          "header": "Retry ?",
+          "body": "Are you sure you wish to retry ?",
+          "cancelLabel": "Cancel",
+          "confirmLabel": "Confirm"
+        },
+        "question": "\u003cp\u003eWhat would be the element in \u003ccode\u003etree.left(tree.right(tree.root()))\u003c/code\u003e if \u003ccode\u003etree.remove(\"horse\")\u003c/code\u003e were performed?\u003c/p\u003e\n",
+        "media": {
+          "library": "H5P.Image 1.1",
+          "params": {
+            "contentName": "Image",
+            "alt": "Image for the question: What would be the element in \u003ccode\u003etree.left(tree.right(tree.root()))\u003c/code\u003e if \u003ccode\u003etree.remove(\"horse\")\u003c/code\u003e were performed?",
+            "file": {
+              "path": "../../images/animalBST.png",
+              "mime": "image/png",
+              "width": 200,
+              "height": 200
+            }
+          }
+        }
+      },
+      "library": "H5P.MultiChoice 1.13"
+    },
+    {
+      "params": {
+        "answers": [
+          {
+            "correct": true,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003edog\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003eelk\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003ebird\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003ehorse\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003eiguana\u003c/div\u003e\n"
+          }
+        ],
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 99,
+            "feedback": "Please review the course materials."
+          },
+          {
+            "from": 100,
+            "to": 100,
+            "feedback": "Excellent!"
+          }
+        ],
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": false,
+          "enableCheckButton": true,
+          "type": "multi",
+          "singlePoint": true,
+          "randomAnswers": true,
+          "showSolutionsRequiresInput": true,
+          "disableImageZooming": false,
+          "confirmCheckDialog": false,
+          "confirmRetryDialog": false,
+          "autoCheck": false,
+          "passPercentage": 100,
+          "showScorePoints": true
+        },
+        "UI": {
+          "checkAnswerButton": "Check",
+          "showSolutionButton": "Show solution",
+          "tryAgainButton": "Retry",
+          "tipsLabel": "Show tip",
+          "scoreBarLabel": "You got :num out of :total points",
+          "tipAvailable": "Tip available",
+          "feedbackAvailable": "Feedback available",
+          "readFeedback": "Read feedback",
+          "wrongAnswer": "Wrong answer",
+          "correctAnswer": "Correct answer",
+          "shouldCheck": "Should have been checked",
+          "shouldNotCheck": "Should not have been checked",
+          "noInput": "Please answer before viewing the solution"
+        },
+        "confirmCheck": {
+          "header": "Finish ?",
+          "body": "Are you sure you wish to finish ?",
+          "cancelLabel": "Cancel",
+          "confirmLabel": "Finish"
+        },
+        "confirmRetry": {
+          "header": "Retry ?",
+          "body": "Are you sure you wish to retry ?",
+          "cancelLabel": "Cancel",
+          "confirmLabel": "Confirm"
+        },
+        "question": "\u003cp\u003eWhat would be the new element in the \u003cem\u003eroot position\u0027s left child\u003c/em\u003e if \u003ccode\u003etree.remove(\"cat\")\u003c/code\u003e were performed?\u003c/p\u003e\n",
+        "media": {
+          "library": "H5P.Image 1.1",
+          "params": {
+            "contentName": "Image",
+            "alt": "Image for the question: What would be the new element in the \u003cem\u003eroot position\u0027s left child\u003c/em\u003e if \u003ccode\u003etree.remove(\"cat\")\u003c/code\u003e were performed?",
+            "file": {
+              "path": "../../images/animalBST.png",
+              "mime": "image/png",
+              "width": 200,
+              "height": 200
+            }
+          }
+        }
+      },
+      "library": "H5P.MultiChoice 1.13"
+    },
+    {
+      "params": {
+        "answers": [
+          {
+            "correct": true,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003e[ bird, cat, dog, elk, horse, iguana, koala, lizard, snake ]\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003e[ bird, cat, dog, elk, horse, koala, iguana, lizard, snake ]\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003e[ elk, koala, bird, dog, iguana, snake, cat, lizard, horse ]\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003e[ horse, cat, lizard, bird, dog, iguana, snake, elk, koala ]\u003c/div\u003e\n"
+          }
+        ],
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 99,
+            "feedback": "Please review the course materials."
+          },
+          {
+            "from": 100,
+            "to": 100,
+            "feedback": "Excellent!"
+          }
+        ],
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": false,
+          "enableCheckButton": true,
+          "type": "multi",
+          "singlePoint": true,
+          "randomAnswers": true,
+          "showSolutionsRequiresInput": true,
+          "disableImageZooming": false,
+          "confirmCheckDialog": false,
+          "confirmRetryDialog": false,
+          "autoCheck": false,
+          "passPercentage": 100,
+          "showScorePoints": true
+        },
+        "UI": {
+          "checkAnswerButton": "Check",
+          "showSolutionButton": "Show solution",
+          "tryAgainButton": "Retry",
+          "tipsLabel": "Show tip",
+          "scoreBarLabel": "You got :num out of :total points",
+          "tipAvailable": "Tip available",
+          "feedbackAvailable": "Feedback available",
+          "readFeedback": "Read feedback",
+          "wrongAnswer": "Wrong answer",
+          "correctAnswer": "Correct answer",
+          "shouldCheck": "Should have been checked",
+          "shouldNotCheck": "Should not have been checked",
+          "noInput": "Please answer before viewing the solution"
+        },
+        "confirmCheck": {
+          "header": "Finish ?",
+          "body": "Are you sure you wish to finish ?",
+          "cancelLabel": "Cancel",
+          "confirmLabel": "Finish"
+        },
+        "confirmRetry": {
+          "header": "Retry ?",
+          "body": "Are you sure you wish to retry ?",
+          "cancelLabel": "Cancel",
+          "confirmLabel": "Confirm"
+        },
+        "question": "\u003cp\u003eWhat is the \u003cstrong\u003einorder\u003c/strong\u003e traversal of a binary search tree?\u003c/p\u003e\n",
+        "media": {
+          "library": "H5P.Image 1.1",
+          "params": {
+            "contentName": "Image",
+            "alt": "Image for the question: What is the \u003cstrong\u003einorder\u003c/strong\u003e traversal of a binary search tree?",
+            "file": {
+              "path": "../../images/animalBST.png",
+              "mime": "image/png",
+              "width": 200,
+              "height": 200
+            }
+          }
+        }
+      },
+      "library": "H5P.MultiChoice 1.13"
+    },
+    {
+      "params": {
+        "answers": [
+          {
+            "correct": true,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003einorder successor\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003einorder predecessor\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003epreorder successor\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003epreorder predecessor\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003epostorder succesor\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003epostorder predecessor\u003c/div\u003e\n"
+          }
+        ],
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 99,
+            "feedback": "Please review the course materials."
+          },
+          {
+            "from": 100,
+            "to": 100,
+            "feedback": "Excellent!"
+          }
+        ],
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": false,
+          "enableCheckButton": true,
+          "type": "multi",
+          "singlePoint": true,
+          "randomAnswers": true,
+          "showSolutionsRequiresInput": true,
+          "disableImageZooming": false,
+          "confirmCheckDialog": false,
+          "confirmRetryDialog": false,
+          "autoCheck": false,
+          "passPercentage": 100,
+          "showScorePoints": true
+        },
+        "UI": {
+          "checkAnswerButton": "Check",
+          "showSolutionButton": "Show solution",
+          "tryAgainButton": "Retry",
+          "tipsLabel": "Show tip",
+          "scoreBarLabel": "You got :num out of :total points",
+          "tipAvailable": "Tip available",
+          "feedbackAvailable": "Feedback available",
+          "readFeedback": "Read feedback",
+          "wrongAnswer": "Wrong answer",
+          "correctAnswer": "Correct answer",
+          "shouldCheck": "Should have been checked",
+          "shouldNotCheck": "Should not have been checked",
+          "noInput": "Please answer before viewing the solution"
+        },
+        "confirmCheck": {
+          "header": "Finish ?",
+          "body": "Are you sure you wish to finish ?",
+          "cancelLabel": "Cancel",
+          "confirmLabel": "Finish"
+        },
+        "confirmRetry": {
+          "header": "Retry ?",
+          "body": "Are you sure you wish to retry ?",
+          "cancelLabel": "Cancel",
+          "confirmLabel": "Confirm"
+        },
+        "question": "\u003cp\u003eFor this course, when deleting from a binary search tree, we will always replace (if needed) with ____.\u003c/p\u003e\n",
+        "media": {
+          "library": "H5P.Image 1.1",
+          "params": {}
+        }
+      },
+      "library": "H5P.MultiChoice 1.13"
+    }
+  ],
+  "introPage": {
+    "showIntroPage": false,
+    "startButtonText": "Start Quiz",
+    "introduction": ""
+  },
+  "texts": {
+    "prevButton": "Previous",
+    "nextButton": "Next",
+    "finishButton": "Finish",
+    "textualProgress": "Question: @current of @total questions",
+    "questionLabel": "Question",
+    "jumpToQuestion": "Jump to question %d",
+    "readSpeakerProgress": "Question @current of @total",
+    "unansweredText": "Unanswered",
+    "answeredText": "Answered",
+    "currentQuestionText": "Current question"
+  },
+  "endGame": {
+    "showResultPage": true,
+    "solutionButtonText": "Show solution",
+    "finishButtonText": "Finish",
+    "showAnimations": false,
+    "skippable": false,
+    "skipButtonText": "Skip video",
+    "message": "Your result:",
+    "retryButtonText": "Retry",
+    "noResultMessage": "Finished",
+    "overallFeedback": [
+      {
+        "from": 0,
+        "to": 100,
+        "feedback": "You got @score points of @total possible."
+      }
+    ],
+    "oldFeedback": {
+      "successGreeting": "Congratulations!",
+      "successComment": "Excellent work!",
+      "failGreeting": "Oh, no!",
+      "failComment": "Please review the lab and/or course materials, visit office hours, or post on Piazza."
+    },
+    "showSolutionButton": false
+  },
+  "override": {
+    "showSolutionButton": "off",
+    "retryButton": "off",
+    "checkButton": true
+  },
+  "disableBackwardsNavigation": false,
+  "randomQuestions": false
+}

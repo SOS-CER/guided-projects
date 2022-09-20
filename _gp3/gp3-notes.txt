@@ -1,0 +1,83 @@
+# GP3 Update Notes
+
+## Build
+DONE - Update testingChecker.sh as per what was done in lab
+
+DONE - Update refactored methods in WolfScheduler - **** ALSO in GP3!!!
+	- addCourseToSchedule
+	- addEventToSchedule
+	- removeActivityFromSchedule
+	- setScheduleTitle
+	- getScheduleTitle
+	
+Task Pages - update text, callouts, images, directions to the new version of Eclipse and with change to Course's name
+DONE - index
+DONE - gp3-repo
+DONE - gp3-stp
+DONE - gp3-conflict-interface
+DONE - gp3-conflictexception
+DONE - gp3-tdd
+DONE - gp3-activity
+DONE - gp3-coverage
+DONE - gp3-wolfscheduler
+DONE - gp3-wolfschedulergui
+DONE - gp3-submit
+
+Other TODOs
+DONE - Add task pages, descriptions, and times to tasks.yml
+	- Finish updating times
+DONE - Add grade info to grade.yml
+   DONE - Also updated deductions and Javadoc
+   - Add to front page and end of GP3
+DONE - Update SE-Materials links
+	https://pages.github.ncsu.edu/engr-csc-software-development/software-lifecycle
+	https://pages.github.ncsu.edu/engr-csc-software-development/practices-tools/overview/
+DONE - Update suggested commit messages
+	[Skeleton] Working on skeleton of X
+	[Implementation] Finished implementing X or Worked on implementation of X
+	[Refactoring] Refactored X to reduce redundancy
+	[Static Analysis] Removed notifications from X
+	[Test] Created tests for X
+	[Fix] Fixed bug(s) in X
+	[Style] Fixed style notification on X
+	[GUI] Working on system testing
+	[Debug] Trying to resolve X in class Y
+	[Documentation] Generated Javadoc
+DONE - Update design diagram
+DONE - Update Teaching Staff System tests
+	Deligate - Create rubric key 
+- Jenkins
+	DONE - Create job
+	DONE - Add tests to executor
+	DONE - Test job
+	- Create base configuration for GP3
+DONE - Update all unit tests
+- Create GitHub student jobs
+
+Cross-Cutting Tasks
+DONE - add task item at the top of each page
+DONE - add objective icon to outcomes page
+DONE - Remove yellow boxes and make them reminder content (unless they are cautions)
+DONE - Add glance icon and GH reminder at the "Check Your Progress" step
+
+icon="objective"
+
+{% include iconHeader.html type="task" %}
+
+{% capture reminder-content %} 
+GitHub Resources:
+
+  * [Staging Files](https://pages.github.ncsu.edu/engr-csc-software-development/practices-tools/git/git-staging)
+  * [Committing Files](https://pages.github.ncsu.edu/engr-csc-software-development/practices-tools/git/git-commit)
+  * [Pushing Files](https://pages.github.ncsu.edu/engr-csc-software-development/practices-tools/git/git-push)
+{% endcapture %} {% include mention.html content=reminder-content type="reminder" title="Reference: Staging and Pushing to GitHub"%} 
+## Check Your Progress
+{% include iconHeader.html type="glance" %}
+
+Complete the following tasks before pushing your work to GitHub.
+
+  - [ ] Make sure that all fields, methods, and constructors are commented.
+  - [ ] Resolve all static analysis notifications.
+  - [ ] Fix test failures.
+  - [ ] Commit and push your code changes with a meaningful commit message.  Label your commit with "[Implementation]" for future you!
+  - [ ] Check Jenkins results for a green ball!  Fix any Jenkins issues.	

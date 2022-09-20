@@ -1,0 +1,36 @@
+{% comment %}
+See: https://github.com/comsysto/jekyll-breadcrumb-for-github-pages
+{% endcomment %}
+<ol class="breadcrumb">
+<li><a href="{{ site.baseurl }}/">Home</a></li>
+{% capture page_url_without_index_html %}{{ page.url | remove: "/index.html" }}{% endcapture %}
+{% assign splitted_url_parts = page_url_without_index_html | split: '/' %}
+{% capture forLoopMaxInt %}{{ splitted_url_parts.size | minus:1 }}{% endcapture %}
+{% assign c = "none" %}
+{% for i in (1..forLoopMaxInt) %}
+    {% capture current_breadcrumb_url %}{{next_prepender}}/{{ splitted_url_parts[i] }}/index.html{% endcapture %}
+	{% capture current_breadcrumb_md_url %}{{next_prepender}}/{{ splitted_url_parts[i] }}/{% endcapture %}
+	{% if current_breadcrumb_md_url contains ".html" %}
+	    {% assign size = current_breadcrumb_md_url | size | minus: 1 %}
+		{% assign current_breadcrumb_md_url = current_breadcrumb_md_url | slice: 0, size %}
+	{% endif %}
+    {% capture next_prepender %}{{next_prepender}}/{{ splitted_url_parts[i] }}{% endcapture %}
+	{% if c == "none" %}
+		{% assign c = next_prepender | remove: "/" %}
+	{% endif %}	
+	{% for col in site.collections %}
+	   {% if col.label == c %}
+	   {% assign collect = col %}
+	   {% endif %}
+	{% endfor %}
+	{% for breadcrumb_page in collect.docs %}
+        {% if current_breadcrumb_url == breadcrumb_page.url or current_breadcrumb_md_url == breadcrumb_page.url  %}
+        {% assign j = forLoopMaxInt | plus: 0 %}
+            <li {% if i == j %}class="active"{% endif %}>
+                {% capture breadcrumb_page_page_url_without_index_html %}{{ breadcrumb_page.url | remove: "index.html" }}{% endcapture %}
+                {% if i != j %}<a href="{{ site.baseurl }}{{breadcrumb_page_page_url_without_index_html}}">{%endif%}{{breadcrumb_page.description}}{% if i != j %}</a>{%endif%}
+            </li>
+        {% endif %}
+    {% endfor %}
+{% endfor %}
+</ol>

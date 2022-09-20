@@ -1,0 +1,20 @@
+<table>
+   <tr>
+      <th>Lab Section</th>
+      <th>Meeting Times</th>
+	  <th>Meeting Location</th>
+	  <th>Lab Deadline</th>
+	  <th>Jenkins</th>
+   </tr>
+   
+      {% for lab in site.data.courseInfo.labSections %}
+	  
+	  <tr>
+	  <td>{{lab.name}}</td>
+	  <td>{{lab.time}}</td>
+	  <td>{{lab.location}}</td>
+	  <td>{{lab.deadline}}</td>
+	  <td><a href="{{lab.jenkins-url}}">{{lab.jenkins-url}}</a></td>
+	  </tr>
+	  {% endfor %}
+</table>

@@ -1,0 +1,167 @@
+{  
+    "progressType":"dots",
+    "passPercentage":50,
+    "questions":[  
+        {  
+            "params":{  
+                "answers":[  
+                    {  
+                        "correct":true,
+                        "tipsAndFeedback":{  
+                            "tip":"",
+                            "chosenFeedback":"",
+                            "notChosenFeedback":""
+                        },
+                        "text":"<div><code>NoSuchElementException<\/code> if the client attempts to call <code>it.next()<\/code> when there are no more elements to process<\/div>\n"
+                    },
+                    {  
+                        "correct":true,
+                        "tipsAndFeedback":{  
+                            "tip":"",
+                            "chosenFeedback":"",
+                            "notChosenFeedback":""
+                        },
+                        "text":"<div><code>IllegalStateException<\/code> if the client attempts to call <code>it.remove()<\/code> when the client has not called <code>it.next()<\/code> before<\/div>\n"
+                    },
+                    {  
+                        "correct":false,
+                        "tipsAndFeedback":{  
+                            "tip":"",
+                            "chosenFeedback":"",
+                            "notChosenFeedback":""
+                        },
+                        "text":"<div><code>IndexOutOfBoundsException<\/code> if the client attends to call <code>it.next()<\/code> on an empty list<\/div>\n"
+                    },
+                    {  
+                        "correct":false,
+                        "tipsAndFeedback":{  
+                            "tip":"",
+                            "chosenFeedback":"",
+                            "notChosenFeedback":""
+                        },
+                        "text":"<div><code>NoSuchElementException<\/code> if the client attempts to call <code>it.hasNext()<\/code> on an empty list<\/div>\n"
+                    },
+                    {  
+                        "correct":false,
+                        "tipsAndFeedback":{  
+                            "tip":"",
+                            "chosenFeedback":"",
+                            "notChosenFeedback":""
+                        },
+                        "text":"<div><code>null</code> when the client attempts to call <code>it.next()<\/code> on an empty list<\/div>\n"
+                    }
+                ],
+                "overallFeedback":[  
+                    {  
+                        "from":0,
+                        "to":99,
+                        "feedback":"Please review the course materials."
+                    },
+                    {  
+                        "from":100,
+                        "to":100,
+                        "feedback":"Excellent!"
+                    }
+                ],
+                "behaviour":{  
+                    "enableRetry":true,
+                    "enableSolutionsButton":false,
+                    "enableCheckButton":true,
+                    "type":"multi",
+                    "singlePoint":false,
+                    "randomAnswers":true,
+                    "showSolutionsRequiresInput":true,
+                    "disableImageZooming":false,
+                    "confirmCheckDialog":false,
+                    "confirmRetryDialog":false,
+                    "autoCheck":false,
+                    "passPercentage":100,
+                    "showScorePoints":true
+                },
+                "UI":{  
+                    "checkAnswerButton":"Check",
+                    "showSolutionButton":"Show solution",
+                    "tryAgainButton":"Retry",
+                    "tipsLabel":"Show tip",
+                    "scoreBarLabel":"You got :num out of :total points",
+                    "tipAvailable":"Tip available",
+                    "feedbackAvailable":"Feedback available",
+                    "readFeedback":"Read feedback",
+                    "wrongAnswer":"Wrong answer",
+                    "correctAnswer":"Correct answer",
+                    "shouldCheck":"Should have been checked",
+                    "shouldNotCheck":"Should not have been checked",
+                    "noInput":"Please answer before viewing the solution"
+                },
+                "confirmCheck":{  
+                    "header":"Finish ?",
+                    "body":"Are you sure you wish to finish ?",
+                    "cancelLabel":"Cancel",
+                    "confirmLabel":"Finish"
+                },
+                "confirmRetry":{  
+                    "header":"Retry ?",
+                    "body":"Are you sure you wish to retry ?",
+                    "cancelLabel":"Cancel",
+                    "confirmLabel":"Confirm"
+                },
+                "question":"<p>Given the positional <code>list = [ Position[\"dog\"], Position[\"cat\"], Position[\"bird\"] ]<\/code>, what would be returned from the following operation?<br><code>list.iterator().next()<\/code><\/p>\n",
+                "media":{  
+                    "params":{  
+
+                    }
+                }
+            },
+            "library":"H5P.MultiChoice 1.13"
+        }
+    ],
+    "introPage":{  
+        "showIntroPage":false,
+        "startButtonText":"Start Quiz",
+        "introduction":""
+    },
+    "texts":{  
+        "prevButton":"Previous",
+        "nextButton":"Next",
+        "finishButton":"Finish",
+        "textualProgress":"Question: @current of @total questions",
+        "questionLabel":"Question",
+        "jumpToQuestion":"Jump to question %d",
+        "readSpeakerProgress":"Question @current of @total",
+        "unansweredText":"Unanswered",
+        "answeredText":"Answered",
+        "currentQuestionText":"Current question"
+    },
+    "endGame":{  
+        "showResultPage":true,
+        "solutionButtonText":"Show solution",
+        "finishButtonText":"Finish",
+        "showAnimations":false,
+        "skippable":false,
+        "skipButtonText":"Skip video",
+        "message":"Your result:",
+        "retryButtonText":"Retry",
+        "noResultMessage":"Finished",
+        "overallFeedback":[  
+            {  
+                "from":0,
+                "to":100,
+                "feedback":"You got @score points of @total possible."
+            }
+        ],
+        "oldFeedback":{  
+            "successGreeting":"Congratulations!",
+            "successComment":"You did very well!",
+            "failGreeting":"Oh, no!",
+            "failComment":"This didn't go so well."
+        },
+        "showSolutionButton":true
+    },
+    "override":{  
+        "showSolutionButton":"off",
+        "retryButton":"off",
+        "checkButton":true
+    },
+    "disableBackwardsNavigation":false,
+    "randomQuestions":false
+}

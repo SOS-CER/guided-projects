@@ -1,0 +1,126 @@
+{
+  "answers": [
+    {
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      },
+      "text": "\u003cdiv\u003ePosition[lizard]\u003c/div\u003e\n"
+    },
+    {
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      },
+      "text": "\u003cdiv\u003elizard\u003c/div\u003e\n"
+    },
+    {
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      },
+      "text": "\u003cdiv\u003ePosition[snake]\u003c/div\u003e\n"
+    },
+    {
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      },
+      "text": "\u003cdiv\u003esnake\u003c/div\u003e\n"
+    },
+    {
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      },
+      "text": "\u003cdiv\u003ePosition[fish]\u003c/div\u003e\n"
+    },
+    {
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      },
+      "text": "\u003cdiv\u003efish\u003c/div\u003e\n"
+    }
+  ],
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 99,
+      "feedback": "Please review the course materials."
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Excellent!"
+    }
+  ],
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": false,
+    "enableCheckButton": true,
+    "type": "multi",
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "disableImageZooming": false,
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true
+  },
+  "UI": {
+    "checkAnswerButton": "Check",
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "confirmCheck": {
+    "header": "Finish ?",
+    "body": "Are you sure you wish to finish ?",
+    "cancelLabel": "Cancel",
+    "confirmLabel": "Finish"
+  },
+  "confirmRetry": {
+    "header": "Retry ?",
+    "body": "Are you sure you wish to retry ?",
+    "cancelLabel": "Cancel",
+    "confirmLabel": "Confirm"
+  },
+  "question": "\u003cp\u003eWhat is returned after performing the following operations:\u003cbr\u003e\u003ccode\u003e//Assume position p \u003d Position[cat]\u003cbr\u003ePosition x \u003d tree.addRight(p,\"frog\")\u003cbr\u003etree.sibling(tree.left(tree.right(tree.parent(tree.parent(x)))))\u003c/code\u003e\u003c/p\u003e\n",
+  "media": {
+    "library": "H5P.Image 1.1",
+    "params": {
+      "contentName": "Image",
+      "alt": "Image for the question: What is returned after performing the following operations:\u003cbr\u003e\u003ccode\u003e//Assume position p \u003d Position[cat]\u003cbr\u003ePosition x \u003d tree.addRight(p,\"frog\")\u003cbr\u003etree.sibling(tree.left(tree.right(tree.parent(tree.parent(x)))))\u003c/code\u003e",
+      "file": {
+        "path": "../../images/binaryAnimalTree.png",
+        "mime": "image/png",
+        "width": 200,
+        "height": 200
+      }
+    }
+  }
+}

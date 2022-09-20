@@ -1,0 +1,10 @@
+wolf-scheduler:
+    directory: _wolf-scheduler/
+    order:
+     - index
+     - ws-requirements
+     - ws-design
+     - ws-implementation
+     - ws-test
+     - ws-comment-style
+     - ws-deployment

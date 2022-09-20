@@ -1,0 +1,26 @@
+<!-- Related Information -->
+{% capture related %}
+<p class="h5">Related Readings:</p>
+<ul>
+{% for section in thisLab.textbook %}
+   <li>{{section}}</li>
+{% endfor %}
+</ul>
+<p class="h5">Related Labs:</p>
+<ul>
+{% for relatedLab in thisLab.relatedLabs %}
+   {% if relatedLab == '(none)' %}
+	   <li>{{ relatedLab }} </li>
+		{% else %}
+{% for lab in site.data.tasks %}
+   {% assign labID = lab.id | remove: ' ' | downcase %}
+   {% if labID == relatedLab %}
+       {% assign rLab = lab %}
+   {% endif %}
+{% endfor %}		
+			<li><a href="../{{relatedLab}}" target="_blank">{{relatedLab | capitalize}}:</a> {{rLab.title}}</li>
+		{% endif %}
+	{% endfor %}
+</ul>
+{% endcapture %}
+{% include callout.html type="resource" title="Related Course Materials" content=related %}

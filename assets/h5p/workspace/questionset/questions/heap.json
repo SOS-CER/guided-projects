@@ -1,0 +1,637 @@
+{
+  "progressType": "dots",
+  "passPercentage": 100,
+  "questions": [
+    {
+      "params": {
+        "answers": [
+          {
+            "correct": true,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003earray-based heap\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003elist\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003esearch tree\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003ehash table\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003elink-based heap\u003c/div\u003e\n"
+          }
+        ],
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 99,
+            "feedback": "Please review the course materials."
+          },
+          {
+            "from": 100,
+            "to": 100,
+            "feedback": "Excellent!"
+          }
+        ],
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": false,
+          "enableCheckButton": true,
+          "type": "multi",
+          "singlePoint": true,
+          "randomAnswers": true,
+          "showSolutionsRequiresInput": true,
+          "disableImageZooming": false,
+          "confirmCheckDialog": false,
+          "confirmRetryDialog": false,
+          "autoCheck": false,
+          "passPercentage": 100,
+          "showScorePoints": true
+        },
+        "UI": {
+          "checkAnswerButton": "Check",
+          "showSolutionButton": "Show solution",
+          "tryAgainButton": "Retry",
+          "tipsLabel": "Show tip",
+          "scoreBarLabel": "You got :num out of :total points",
+          "tipAvailable": "Tip available",
+          "feedbackAvailable": "Feedback available",
+          "readFeedback": "Read feedback",
+          "wrongAnswer": "Wrong answer",
+          "correctAnswer": "Correct answer",
+          "shouldCheck": "Should have been checked",
+          "shouldNotCheck": "Should not have been checked",
+          "noInput": "Please answer before viewing the solution"
+        },
+        "confirmCheck": {
+          "header": "Finish ?",
+          "body": "Are you sure you wish to finish ?",
+          "cancelLabel": "Cancel",
+          "confirmLabel": "Finish"
+        },
+        "confirmRetry": {
+          "header": "Retry ?",
+          "body": "Are you sure you wish to retry ?",
+          "cancelLabel": "Cancel",
+          "confirmLabel": "Confirm"
+        },
+        "question": "\u003cp\u003ePriority queues are most efficiently implemented as what data structure?\u003c/p\u003e\n",
+        "media": {
+          "library": "H5P.Image 1.1",
+          "params": {}
+        }
+      },
+      "library": "H5P.MultiChoice 1.13"
+    },
+    {
+      "params": {
+        "answers": [
+          {
+            "correct": true,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003ecomplete\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003eproper\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003eperfect\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003ebinary search trees\u003c/div\u003e\n"
+          }
+        ],
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 99,
+            "feedback": "Please review the course materials."
+          },
+          {
+            "from": 100,
+            "to": 100,
+            "feedback": "Excellent!"
+          }
+        ],
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": false,
+          "enableCheckButton": true,
+          "type": "multi",
+          "singlePoint": true,
+          "randomAnswers": true,
+          "showSolutionsRequiresInput": true,
+          "disableImageZooming": false,
+          "confirmCheckDialog": false,
+          "confirmRetryDialog": false,
+          "autoCheck": false,
+          "passPercentage": 100,
+          "showScorePoints": true
+        },
+        "UI": {
+          "checkAnswerButton": "Check",
+          "showSolutionButton": "Show solution",
+          "tryAgainButton": "Retry",
+          "tipsLabel": "Show tip",
+          "scoreBarLabel": "You got :num out of :total points",
+          "tipAvailable": "Tip available",
+          "feedbackAvailable": "Feedback available",
+          "readFeedback": "Read feedback",
+          "wrongAnswer": "Wrong answer",
+          "correctAnswer": "Correct answer",
+          "shouldCheck": "Should have been checked",
+          "shouldNotCheck": "Should not have been checked",
+          "noInput": "Please answer before viewing the solution"
+        },
+        "confirmCheck": {
+          "header": "Finish ?",
+          "body": "Are you sure you wish to finish ?",
+          "cancelLabel": "Cancel",
+          "confirmLabel": "Finish"
+        },
+        "confirmRetry": {
+          "header": "Retry ?",
+          "body": "Are you sure you wish to retry ?",
+          "cancelLabel": "Cancel",
+          "confirmLabel": "Confirm"
+        },
+        "question": "\u003cp\u003eHeaps are \u003cem\u003ealways\u003c/em\u003e:\u003c/p\u003e\n",
+        "media": {
+          "library": "H5P.Image 1.1",
+          "params": {}
+        }
+      },
+      "library": "H5P.MultiChoice 1.13"
+    },
+    {
+      "params": {
+        "answers": [
+          {
+            "correct": true,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003e7\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003e1\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003e2\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003e3\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003e4\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003e5\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003e6\u003c/div\u003e\n"
+          }
+        ],
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 99,
+            "feedback": "Please review the course materials."
+          },
+          {
+            "from": 100,
+            "to": 100,
+            "feedback": "Excellent!"
+          }
+        ],
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": false,
+          "enableCheckButton": true,
+          "type": "multi",
+          "singlePoint": true,
+          "randomAnswers": true,
+          "showSolutionsRequiresInput": true,
+          "disableImageZooming": false,
+          "confirmCheckDialog": false,
+          "confirmRetryDialog": false,
+          "autoCheck": false,
+          "passPercentage": 100,
+          "showScorePoints": true
+        },
+        "UI": {
+          "checkAnswerButton": "Check",
+          "showSolutionButton": "Show solution",
+          "tryAgainButton": "Retry",
+          "tipsLabel": "Show tip",
+          "scoreBarLabel": "You got :num out of :total points",
+          "tipAvailable": "Tip available",
+          "feedbackAvailable": "Feedback available",
+          "readFeedback": "Read feedback",
+          "wrongAnswer": "Wrong answer",
+          "correctAnswer": "Correct answer",
+          "shouldCheck": "Should have been checked",
+          "shouldNotCheck": "Should not have been checked",
+          "noInput": "Please answer before viewing the solution"
+        },
+        "confirmCheck": {
+          "header": "Finish ?",
+          "body": "Are you sure you wish to finish ?",
+          "cancelLabel": "Cancel",
+          "confirmLabel": "Finish"
+        },
+        "confirmRetry": {
+          "header": "Retry ?",
+          "body": "Are you sure you wish to retry ?",
+          "cancelLabel": "Cancel",
+          "confirmLabel": "Confirm"
+        },
+        "question": "\u003cp\u003eWhere would the new node with the key \"goat\" be inserted \u003cem\u003einitially\u003c/em\u003e (before performing any upHeaps)?\u003c/p\u003e\n",
+        "media": {
+          "library": "H5P.Image 1.1",
+          "params": {
+            "contentName": "Image",
+            "alt": "Image for the question: Where would the new node with the key \"goat\" be inserted \u003cem\u003einitially\u003c/em\u003e (before performing any upHeaps)?",
+            "file": {
+              "path": "../../images/heapInsert.png",
+              "mime": "image/png",
+              "width": 200,
+              "height": 200
+            }
+          }
+        }
+      },
+      "library": "H5P.MultiChoice 1.13"
+    },
+    {
+      "params": {
+        "answers": [
+          {
+            "correct": true,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003e3\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003e1\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003e2\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003e4\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003e5\u003c/div\u003e\n"
+          }
+        ],
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 99,
+            "feedback": "Please review the course materials."
+          },
+          {
+            "from": 100,
+            "to": 100,
+            "feedback": "Excellent!"
+          }
+        ],
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": false,
+          "enableCheckButton": true,
+          "type": "multi",
+          "singlePoint": true,
+          "randomAnswers": true,
+          "showSolutionsRequiresInput": true,
+          "disableImageZooming": false,
+          "confirmCheckDialog": false,
+          "confirmRetryDialog": false,
+          "autoCheck": false,
+          "passPercentage": 100,
+          "showScorePoints": true
+        },
+        "UI": {
+          "checkAnswerButton": "Check",
+          "showSolutionButton": "Show solution",
+          "tryAgainButton": "Retry",
+          "tipsLabel": "Show tip",
+          "scoreBarLabel": "You got :num out of :total points",
+          "tipAvailable": "Tip available",
+          "feedbackAvailable": "Feedback available",
+          "readFeedback": "Read feedback",
+          "wrongAnswer": "Wrong answer",
+          "correctAnswer": "Correct answer",
+          "shouldCheck": "Should have been checked",
+          "shouldNotCheck": "Should not have been checked",
+          "noInput": "Please answer before viewing the solution"
+        },
+        "confirmCheck": {
+          "header": "Finish ?",
+          "body": "Are you sure you wish to finish ?",
+          "cancelLabel": "Cancel",
+          "confirmLabel": "Finish"
+        },
+        "confirmRetry": {
+          "header": "Retry ?",
+          "body": "Are you sure you wish to retry ?",
+          "cancelLabel": "Cancel",
+          "confirmLabel": "Confirm"
+        },
+        "question": "\u003cp\u003eHow many \u003cem\u003eswaps\u003c/em\u003e (including the initial swap to replace the removed key) are performed during \u003ccode\u003eheap.deleteMin()\u003c/code\u003e?\u003c/p\u003e\n",
+        "media": {
+          "library": "H5P.Image 1.1",
+          "params": {
+            "contentName": "Image",
+            "alt": "Image for the question: How many \u003cem\u003eswaps\u003c/em\u003e (including the initial swap to replace the removed key) are performed during \u003ccode\u003eheap.deleteMin()\u003c/code\u003e?",
+            "file": {
+              "path": "../../images/heapDelete.png",
+              "mime": "image/png",
+              "width": 200,
+              "height": 200
+            }
+          }
+        }
+      },
+      "library": "H5P.MultiChoice 1.13"
+    },
+    {
+      "params": {
+        "answers": [
+          {
+            "correct": true,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003eO(log n)\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003eO(n)\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003eO(1)\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003eO(n log n)\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003eO(n\u003csup\u003e2\u003c/sup\u003e)\u003c/div\u003e\n"
+          }
+        ],
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 99,
+            "feedback": "Please review the course materials."
+          },
+          {
+            "from": 100,
+            "to": 100,
+            "feedback": "Excellent!"
+          }
+        ],
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": false,
+          "enableCheckButton": true,
+          "type": "multi",
+          "singlePoint": true,
+          "randomAnswers": true,
+          "showSolutionsRequiresInput": true,
+          "disableImageZooming": false,
+          "confirmCheckDialog": false,
+          "confirmRetryDialog": false,
+          "autoCheck": false,
+          "passPercentage": 100,
+          "showScorePoints": true
+        },
+        "UI": {
+          "checkAnswerButton": "Check",
+          "showSolutionButton": "Show solution",
+          "tryAgainButton": "Retry",
+          "tipsLabel": "Show tip",
+          "scoreBarLabel": "You got :num out of :total points",
+          "tipAvailable": "Tip available",
+          "feedbackAvailable": "Feedback available",
+          "readFeedback": "Read feedback",
+          "wrongAnswer": "Wrong answer",
+          "correctAnswer": "Correct answer",
+          "shouldCheck": "Should have been checked",
+          "shouldNotCheck": "Should not have been checked",
+          "noInput": "Please answer before viewing the solution"
+        },
+        "confirmCheck": {
+          "header": "Finish ?",
+          "body": "Are you sure you wish to finish ?",
+          "cancelLabel": "Cancel",
+          "confirmLabel": "Finish"
+        },
+        "confirmRetry": {
+          "header": "Retry ?",
+          "body": "Are you sure you wish to retry ?",
+          "cancelLabel": "Cancel",
+          "confirmLabel": "Confirm"
+        },
+        "question": "\u003cp\u003eThe \u003cstrong\u003eworst-case\u003c/strong\u003e height of a heap is ___.\u003c/p\u003e\n",
+        "media": {
+          "library": "H5P.Image 1.1",
+          "params": {}
+        }
+      },
+      "library": "H5P.MultiChoice 1.13"
+    }
+  ],
+  "introPage": {
+    "showIntroPage": false,
+    "startButtonText": "Start Quiz",
+    "introduction": ""
+  },
+  "texts": {
+    "prevButton": "Previous",
+    "nextButton": "Next",
+    "finishButton": "Finish",
+    "textualProgress": "Question: @current of @total questions",
+    "questionLabel": "Question",
+    "jumpToQuestion": "Jump to question %d",
+    "readSpeakerProgress": "Question @current of @total",
+    "unansweredText": "Unanswered",
+    "answeredText": "Answered",
+    "currentQuestionText": "Current question"
+  },
+  "endGame": {
+    "showResultPage": true,
+    "solutionButtonText": "Show solution",
+    "finishButtonText": "Finish",
+    "showAnimations": false,
+    "skippable": false,
+    "skipButtonText": "Skip video",
+    "message": "Your result:",
+    "retryButtonText": "Retry",
+    "noResultMessage": "Finished",
+    "overallFeedback": [
+      {
+        "from": 0,
+        "to": 100,
+        "feedback": "You got @score points of @total possible."
+      }
+    ],
+    "oldFeedback": {
+      "successGreeting": "Congratulations!",
+      "successComment": "Excellent work!",
+      "failGreeting": "Oh, no!",
+      "failComment": "Please review the lab and/or course materials, visit office hours, or post on Piazza."
+    },
+    "showSolutionButton": false
+  },
+  "override": {
+    "showSolutionButton": "off",
+    "retryButton": "off",
+    "checkButton": true
+  },
+  "disableBackwardsNavigation": false,
+  "randomQuestions": false
+}

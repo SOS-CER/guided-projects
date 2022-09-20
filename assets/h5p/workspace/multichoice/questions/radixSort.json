@@ -1,0 +1,98 @@
+{  
+    "answers":[  
+		        {  
+            "correct":true,
+            "tipsAndFeedback":{  
+                "tip":"",
+                "chosenFeedback":"",
+                "notChosenFeedback":""
+            },
+            "text":"<div>O(wn), where w is the length of the longest element<\/div>\n"
+        },        {  
+            "correct":false,
+            "tipsAndFeedback":{  
+                "tip":"",
+                "chosenFeedback":"",
+                "notChosenFeedback":""
+            },
+            "text":"<div>O(n+k), where k is the range of the elements being sorted<\/div>\n"
+        },        {  
+            "correct":false,
+            "tipsAndFeedback":{  
+                "tip":"",
+                "chosenFeedback":"",
+                "notChosenFeedback":""
+            },
+            "text":"<div>O(wn), where w is the range of the elements being sorted<\/div>\n"
+        },        {  
+            "correct":false,
+            "tipsAndFeedback":{  
+                "tip":"",
+                "chosenFeedback":"",
+                "notChosenFeedback":""
+            },
+            "text":"<div>O(n+k), where k is the length of the longest element<\/div>\n"
+        }   
+    ],
+    "overallFeedback":[  
+        {  
+            "from":0,
+            "to":99,
+            "feedback":"Please review the course materials."
+        },
+        {  
+            "from":100,
+            "to":100,
+            "feedback":"Excellent!"
+        }
+    ],
+    "behaviour":{  
+        "enableRetry":true,
+        "enableSolutionsButton":false,
+        "enableCheckButton":true,
+        "type":"multi",
+        "singlePoint":true,
+        "randomAnswers":true,
+        "showSolutionsRequiresInput":true,
+        "disableImageZooming":false,
+        "confirmCheckDialog":false,
+        "confirmRetryDialog":false,
+        "autoCheck":false,
+        "passPercentage":100,
+        "showScorePoints":true
+    },
+    "UI":{  
+        "checkAnswerButton":"Check",
+        "showSolutionButton":"Show solution",
+        "tryAgainButton":"Retry",
+        "tipsLabel":"Show tip",
+        "scoreBarLabel":"You got :num out of :total points",
+        "tipAvailable":"Tip available",
+        "feedbackAvailable":"Feedback available",
+        "readFeedback":"Read feedback",
+        "wrongAnswer":"Wrong answer",
+        "correctAnswer":"Correct answer",
+        "shouldCheck":"Should have been checked",
+        "shouldNotCheck":"Should not have been checked",
+        "noInput":"Please answer before viewing the solution"
+    },
+    "confirmCheck":{  
+        "header":"Finish ?",
+        "body":"Are you sure you wish to finish ?",
+        "cancelLabel":"Cancel",
+        "confirmLabel":"Finish"
+    },
+    "confirmRetry":{  
+        "header":"Retry ?",
+        "body":"Are you sure you wish to retry ?",
+        "cancelLabel":"Cancel",
+        "confirmLabel":"Confirm"
+    },
+    "question":"<p>What is the worst-case runtime of <strong>radix sort<\/strong>?<\/p>\n",
+    "media":{  
+        "params":{  
+
+        }
+    }
+}
+

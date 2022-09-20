@@ -1,0 +1,111 @@
+# Grade Items
+jenkins-server: https://csc216-jenkins.csc.ncsu.edu/
+grades:
+  gp1: 
+    overall:
+      - item: Teaching Staff JUnit Tests
+        points: 40
+        details: Pass all of the provided JUnit tests.
+        icon: unitTest
+      - item: Teaching Staff System Tests
+        points: 40
+        details: There are 13 test cases at 2 points a piece. To pass a test case, your program must show the appropriate actual results for the provided test inputs. An additional 1 point per test is for reporting the actual results of your program in the system test plan - even if the test is failing. The last point is for submitting your document in the correct location (i.e., the `project_docs/` folder in your Eclipse project).
+        icon: systemTest
+      - item: Javadoc Contents
+        points: 10
+        details: See the Javadoc rubric, below. The rubric will be applied per class and will be averaged by the number of classes.
+        icon: dnTool
+      - item: Javadoc Generation
+        points: 5
+        details: Javadoc tool was used to generate the HTML version of the API, which matches the current version of the in-code Javadoc.
+        icon: dnTool
+      - item: Style
+        points: 5
+        details: Any PMD, CheckStyle, or SpotBugs Scary or Scariest notifications will result in a one point deduction, up to the available points.
+        icon: saTool
+  gp2: 
+    overall:
+      - item: Teaching Staff JUnit Tests
+        points: 40
+        details: Pass all of the provided JUnit tests.
+        icon: unitTest
+      - item: Teaching Staff System Tests
+        points: 45
+        details: There are 15 system-level black box tests. All tests are worth 3 points for a total of 45 points. For each test, 2 points are for passing the test and 1 point is for reporting the actual results of running the test on YOUR program - even if the test if failing!
+        icon: systemTest
+      - item: Javadoc Contents
+        points: 5
+        details: See the Javadoc rubric, below. The rubric will be applied per class and will be averaged by the number of classes.
+        icon: dnTool
+      - item: Javadoc Generation
+        points: 5
+        details: Javadoc tool was used to generate the HTML version of the API, which matches the current version of the in-code Javadoc.
+        icon: dnTool
+      - item: Style
+        points: 5
+        details: Any PMD, CheckStyle, or SpotBugs Scary or Scariest notifications will result in a one point deduction, up to the available points.
+        icon: saTool
+  gp3: 
+    overall:
+      - item: Student JUnit Tests
+        points: 20
+        details: Pass all of *your* JUnit tests.
+        icon: unitTest
+      - item: Student Coverage
+        points: 20
+        details: Achieve at least 80% statement coverage on each non-UI class.
+        icon: unitTest
+      - item: Teaching Staff JUnit Tests
+        points: 20
+        details: Pass all of the teaching staff JUnit tests (this includes the originally provided tests, with some updates as per the requirements and new hidden tests for the schedule conflict functionality).
+        icon: unitTest
+      - item: Student System Tests
+        points: 20
+        details: There are 20 tests. You should both pass the test and report the actual results of execution. You will receive partial credit for reporting failing results for any of these tests that fail.
+        icon: systemTest
+      - item: Teaching Staff System Tests
+        points: 20
+        details: Pass the teaching staff's system tests.
+        icon: systemTest
+      - item: Javadoc Contents
+        points: 5
+        details: See the Javadoc rubric, below. The rubric will be applied per class and will be averaged by the number of classes.
+        icon: dnTool
+      - item: Javadoc Generation
+        points: 5
+        details: Javadoc tool was used to generate the HTML version of the API, which matches the current version of the in-code Javadoc.
+        icon: dnTool
+      - item: Style
+        points: 5
+        details: Any PMD, CheckStyle, or SpotBugs Scary or Scariest notifications will result in a one point deduction, up to the available points.
+        icon: saTool
+  javadoc:
+    overall:
+      - item: Class comments
+        strong: Class comments fully describe the behavior and abstraction of the class. Author tag is there.
+        adequate: Class comments lack some details of the class’ behavior and abstraction. Author tag may be missing.
+        inadequate: Class comments are there but provide no detail about the class’ purpose. Author tag may be missing.
+      - item: Method comments
+        strong: Method comments fully describe the behavior of the method. Param, return, and throws (for both checked and unchecked exceptions) tags are there and fully specified as appropriate for the method.
+        adequate: Method comments lack some details about the method’s behavior. Param and return tags are there, but not fully specified.
+        inadequate: Method comments are there but provide no detail about the method’s purpose. Param and return tags are missing.
+      - item: Field comments
+        strong: Field comments fully describe the field’s state as part of the class’ abstraction
+        adequate: Field comments lack some details about the field’s state as part of the class.
+        inadequate: Field comments are minimal and provide no detail about the field’s purpose.
+      - item: Spelling
+        strong: No spelling errors
+        adequate: A few minor spelling errors that do not distract from the content.
+        inadequate: Many spelling errors that distract from the content
+      - item: Grammar
+        strong: No grammatical errors
+        adequate: A few grammatical errors that do not distract from the content
+        inadequate: Many grammatical errors that distract from the content.
+  deductions:
+    overall: 
+      - item: Misnamed file or incorrect project structure
+        points: -5
+        details: Incorrect names of files or incorrect project structure.  This can include problems when importing the project to Eclipse for acceptance testing, incorrect location of the system test file, etc. 
+      - item: Late
+        points: varies
+        details: You will lose 1 point for every 2 hours your projects is late, up to 24 points in 48 hours.

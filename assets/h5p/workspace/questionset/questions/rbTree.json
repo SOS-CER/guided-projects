@@ -1,0 +1,907 @@
+{
+  "progressType": "dots",
+  "passPercentage": 100,
+  "questions": [
+    {
+      "params": {
+        "answers": [
+          {
+            "correct": true,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003eNo\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003eYes\u003c/div\u003e\n"
+          }
+        ],
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 99,
+            "feedback": "Please review the course materials."
+          },
+          {
+            "from": 100,
+            "to": 100,
+            "feedback": "Excellent!"
+          }
+        ],
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": false,
+          "enableCheckButton": true,
+          "type": "multi",
+          "singlePoint": true,
+          "randomAnswers": true,
+          "showSolutionsRequiresInput": true,
+          "disableImageZooming": false,
+          "confirmCheckDialog": false,
+          "confirmRetryDialog": false,
+          "autoCheck": false,
+          "passPercentage": 100,
+          "showScorePoints": true
+        },
+        "UI": {
+          "checkAnswerButton": "Check",
+          "showSolutionButton": "Show solution",
+          "tryAgainButton": "Retry",
+          "tipsLabel": "Show tip",
+          "scoreBarLabel": "You got :num out of :total points",
+          "tipAvailable": "Tip available",
+          "feedbackAvailable": "Feedback available",
+          "readFeedback": "Read feedback",
+          "wrongAnswer": "Wrong answer",
+          "correctAnswer": "Correct answer",
+          "shouldCheck": "Should have been checked",
+          "shouldNotCheck": "Should not have been checked",
+          "noInput": "Please answer before viewing the solution"
+        },
+        "confirmCheck": {
+          "header": "Finish ?",
+          "body": "Are you sure you wish to finish ?",
+          "cancelLabel": "Cancel",
+          "confirmLabel": "Finish"
+        },
+        "confirmRetry": {
+          "header": "Retry ?",
+          "body": "Are you sure you wish to retry ?",
+          "cancelLabel": "Cancel",
+          "confirmLabel": "Confirm"
+        },
+        "question": "\u003cp\u003eIs the tree a valid red-black tree?\u003c/p\u003e\n",
+        "media": {
+          "library": "H5P.Image 1.1",
+          "params": {
+            "contentName": "Image",
+            "alt": "Image for the question: Is the tree a valid red-black tree?",
+            "file": {
+              "path": "../../images/rbTree1.png",
+              "mime": "image/png",
+              "width": 200,
+              "height": 200
+            }
+          }
+        }
+      },
+      "library": "H5P.MultiChoice 1.13"
+    },
+    {
+      "params": {
+        "answers": [
+          {
+            "correct": true,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003eroot property\u003c/div\u003e\n"
+          },
+          {
+            "correct": true,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003eblack depth property\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003ered property\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003eleaf property\u003c/div\u003e\n"
+          }
+        ],
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 99,
+            "feedback": "Please review the course materials."
+          },
+          {
+            "from": 100,
+            "to": 100,
+            "feedback": "Excellent!"
+          }
+        ],
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": false,
+          "enableCheckButton": true,
+          "type": "multi",
+          "singlePoint": false,
+          "randomAnswers": true,
+          "showSolutionsRequiresInput": true,
+          "disableImageZooming": false,
+          "confirmCheckDialog": false,
+          "confirmRetryDialog": false,
+          "autoCheck": false,
+          "passPercentage": 100,
+          "showScorePoints": true
+        },
+        "UI": {
+          "checkAnswerButton": "Check",
+          "showSolutionButton": "Show solution",
+          "tryAgainButton": "Retry",
+          "tipsLabel": "Show tip",
+          "scoreBarLabel": "You got :num out of :total points",
+          "tipAvailable": "Tip available",
+          "feedbackAvailable": "Feedback available",
+          "readFeedback": "Read feedback",
+          "wrongAnswer": "Wrong answer",
+          "correctAnswer": "Correct answer",
+          "shouldCheck": "Should have been checked",
+          "shouldNotCheck": "Should not have been checked",
+          "noInput": "Please answer before viewing the solution"
+        },
+        "confirmCheck": {
+          "header": "Finish ?",
+          "body": "Are you sure you wish to finish ?",
+          "cancelLabel": "Cancel",
+          "confirmLabel": "Finish"
+        },
+        "confirmRetry": {
+          "header": "Retry ?",
+          "body": "Are you sure you wish to retry ?",
+          "cancelLabel": "Cancel",
+          "confirmLabel": "Confirm"
+        },
+        "question": "\u003cp\u003eWhat red-black tree property (or properties) are violated in the tree?\u003c/p\u003e\n",
+        "media": {
+          "library": "H5P.Image 1.1",
+          "params": {
+            "contentName": "Image",
+            "alt": "Image for the question: What red-black tree property (or properties) are violated in the tree?",
+            "file": {
+              "path": "../../images/rbTree1.png",
+              "mime": "image/png",
+              "width": 200,
+              "height": 200
+            }
+          }
+        }
+      },
+      "library": "H5P.MultiChoice 1.13"
+    },
+    {
+      "params": {
+        "answers": [
+          {
+            "correct": true,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003eYes\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003eNo\u003c/div\u003e\n"
+          }
+        ],
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 99,
+            "feedback": "Please review the course materials."
+          },
+          {
+            "from": 100,
+            "to": 100,
+            "feedback": "Excellent!"
+          }
+        ],
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": false,
+          "enableCheckButton": true,
+          "type": "multi",
+          "singlePoint": true,
+          "randomAnswers": true,
+          "showSolutionsRequiresInput": true,
+          "disableImageZooming": false,
+          "confirmCheckDialog": false,
+          "confirmRetryDialog": false,
+          "autoCheck": false,
+          "passPercentage": 100,
+          "showScorePoints": true
+        },
+        "UI": {
+          "checkAnswerButton": "Check",
+          "showSolutionButton": "Show solution",
+          "tryAgainButton": "Retry",
+          "tipsLabel": "Show tip",
+          "scoreBarLabel": "You got :num out of :total points",
+          "tipAvailable": "Tip available",
+          "feedbackAvailable": "Feedback available",
+          "readFeedback": "Read feedback",
+          "wrongAnswer": "Wrong answer",
+          "correctAnswer": "Correct answer",
+          "shouldCheck": "Should have been checked",
+          "shouldNotCheck": "Should not have been checked",
+          "noInput": "Please answer before viewing the solution"
+        },
+        "confirmCheck": {
+          "header": "Finish ?",
+          "body": "Are you sure you wish to finish ?",
+          "cancelLabel": "Cancel",
+          "confirmLabel": "Finish"
+        },
+        "confirmRetry": {
+          "header": "Retry ?",
+          "body": "Are you sure you wish to retry ?",
+          "cancelLabel": "Cancel",
+          "confirmLabel": "Confirm"
+        },
+        "question": "\u003cp\u003eIs the tree a valid red-black tree?\u003c/p\u003e\n",
+        "media": {
+          "library": "H5P.Image 1.1",
+          "params": {
+            "contentName": "Image",
+            "alt": "Image for the question: Is the tree a valid red-black tree?",
+            "file": {
+              "path": "../../images/rbTree2.png",
+              "mime": "image/png",
+              "width": 200,
+              "height": 200
+            }
+          }
+        }
+      },
+      "library": "H5P.MultiChoice 1.13"
+    },
+    {
+      "params": {
+        "answers": [
+          {
+            "correct": true,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003e[cat, horse]\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003e[ horse, cat ]\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003e[ cat, horse, lizard ]\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003e[ horse, lizard ]\u003c/div\u003e\n"
+          }
+        ],
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 99,
+            "feedback": "Please review the course materials."
+          },
+          {
+            "from": 100,
+            "to": 100,
+            "feedback": "Excellent!"
+          }
+        ],
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": false,
+          "enableCheckButton": true,
+          "type": "multi",
+          "singlePoint": true,
+          "randomAnswers": true,
+          "showSolutionsRequiresInput": true,
+          "disableImageZooming": false,
+          "confirmCheckDialog": false,
+          "confirmRetryDialog": false,
+          "autoCheck": false,
+          "passPercentage": 100,
+          "showScorePoints": true
+        },
+        "UI": {
+          "checkAnswerButton": "Check",
+          "showSolutionButton": "Show solution",
+          "tryAgainButton": "Retry",
+          "tipsLabel": "Show tip",
+          "scoreBarLabel": "You got :num out of :total points",
+          "tipAvailable": "Tip available",
+          "feedbackAvailable": "Feedback available",
+          "readFeedback": "Read feedback",
+          "wrongAnswer": "Wrong answer",
+          "correctAnswer": "Correct answer",
+          "shouldCheck": "Should have been checked",
+          "shouldNotCheck": "Should not have been checked",
+          "noInput": "Please answer before viewing the solution"
+        },
+        "confirmCheck": {
+          "header": "Finish ?",
+          "body": "Are you sure you wish to finish ?",
+          "cancelLabel": "Cancel",
+          "confirmLabel": "Finish"
+        },
+        "confirmRetry": {
+          "header": "Retry ?",
+          "body": "Are you sure you wish to retry ?",
+          "cancelLabel": "Cancel",
+          "confirmLabel": "Confirm"
+        },
+        "question": "\u003cp\u003eWhat \u003cem\u003eelements\u003c/em\u003e are in the root node of the corresponding 2-4 tree represented by this red-black tree?\u003c/p\u003e\n",
+        "media": {
+          "library": "H5P.Image 1.1",
+          "params": {
+            "contentName": "Image",
+            "alt": "Image for the question: What \u003cem\u003eelements\u003c/em\u003e are in the root node of the corresponding 2-4 tree represented by this red-black tree?",
+            "file": {
+              "path": "../../images/rbTree2.png",
+              "mime": "image/png",
+              "width": 200,
+              "height": 200
+            }
+          }
+        }
+      },
+      "library": "H5P.MultiChoice 1.13"
+    },
+    {
+      "params": {
+        "answers": [
+          {
+            "correct": true,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003ered property\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003eroot property\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003eblack-depth property\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003eleaf property\u003c/div\u003e\n"
+          }
+        ],
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 99,
+            "feedback": "Please review the course materials."
+          },
+          {
+            "from": 100,
+            "to": 100,
+            "feedback": "Excellent!"
+          }
+        ],
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": false,
+          "enableCheckButton": true,
+          "type": "multi",
+          "singlePoint": true,
+          "randomAnswers": true,
+          "showSolutionsRequiresInput": true,
+          "disableImageZooming": false,
+          "confirmCheckDialog": false,
+          "confirmRetryDialog": false,
+          "autoCheck": false,
+          "passPercentage": 100,
+          "showScorePoints": true
+        },
+        "UI": {
+          "checkAnswerButton": "Check",
+          "showSolutionButton": "Show solution",
+          "tryAgainButton": "Retry",
+          "tipsLabel": "Show tip",
+          "scoreBarLabel": "You got :num out of :total points",
+          "tipAvailable": "Tip available",
+          "feedbackAvailable": "Feedback available",
+          "readFeedback": "Read feedback",
+          "wrongAnswer": "Wrong answer",
+          "correctAnswer": "Correct answer",
+          "shouldCheck": "Should have been checked",
+          "shouldNotCheck": "Should not have been checked",
+          "noInput": "Please answer before viewing the solution"
+        },
+        "confirmCheck": {
+          "header": "Finish ?",
+          "body": "Are you sure you wish to finish ?",
+          "cancelLabel": "Cancel",
+          "confirmLabel": "Finish"
+        },
+        "confirmRetry": {
+          "header": "Retry ?",
+          "body": "Are you sure you wish to retry ?",
+          "cancelLabel": "Cancel",
+          "confirmLabel": "Confirm"
+        },
+        "question": "\u003cp\u003eWhat red-black tree property (or properties) are violated if we insert \"tiger\" into the tree?\u003c/p\u003e\n",
+        "media": {
+          "library": "H5P.Image 1.1",
+          "params": {
+            "contentName": "Image",
+            "alt": "Image for the question: What red-black tree property (or properties) are violated if we insert \"tiger\" into the tree?",
+            "file": {
+              "path": "../../images/rbTree2.png",
+              "mime": "image/png",
+              "width": 200,
+              "height": 200
+            }
+          }
+        }
+      },
+      "library": "H5P.MultiChoice 1.13"
+    },
+    {
+      "params": {
+        "answers": [
+          {
+            "correct": true,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003eoverflow\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003eunderflow\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003etransfer\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003efusion\u003c/div\u003e\n"
+          }
+        ],
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 99,
+            "feedback": "Please review the course materials."
+          },
+          {
+            "from": 100,
+            "to": 100,
+            "feedback": "Excellent!"
+          }
+        ],
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": false,
+          "enableCheckButton": true,
+          "type": "multi",
+          "singlePoint": true,
+          "randomAnswers": true,
+          "showSolutionsRequiresInput": true,
+          "disableImageZooming": false,
+          "confirmCheckDialog": false,
+          "confirmRetryDialog": false,
+          "autoCheck": false,
+          "passPercentage": 100,
+          "showScorePoints": true
+        },
+        "UI": {
+          "checkAnswerButton": "Check",
+          "showSolutionButton": "Show solution",
+          "tryAgainButton": "Retry",
+          "tipsLabel": "Show tip",
+          "scoreBarLabel": "You got :num out of :total points",
+          "tipAvailable": "Tip available",
+          "feedbackAvailable": "Feedback available",
+          "readFeedback": "Read feedback",
+          "wrongAnswer": "Wrong answer",
+          "correctAnswer": "Correct answer",
+          "shouldCheck": "Should have been checked",
+          "shouldNotCheck": "Should not have been checked",
+          "noInput": "Please answer before viewing the solution"
+        },
+        "confirmCheck": {
+          "header": "Finish ?",
+          "body": "Are you sure you wish to finish ?",
+          "cancelLabel": "Cancel",
+          "confirmLabel": "Finish"
+        },
+        "confirmRetry": {
+          "header": "Retry ?",
+          "body": "Are you sure you wish to retry ?",
+          "cancelLabel": "Cancel",
+          "confirmLabel": "Confirm"
+        },
+        "question": "\u003cp\u003eIf the red-black tree were represented by a corresponding 2-4 tree, what condition would be represented after inserting \"tiger\"?\u003c/p\u003e\n",
+        "media": {
+          "library": "H5P.Image 1.1",
+          "params": {
+            "contentName": "Image",
+            "alt": "Image for the question: If the red-black tree were represented by a corresponding 2-4 tree, what condition would be represented after inserting \"tiger\"?",
+            "file": {
+              "path": "../../images/rbTreeTiger.png",
+              "mime": "image/png",
+              "width": 200,
+              "height": 200
+            }
+          }
+        }
+      },
+      "library": "H5P.MultiChoice 1.13"
+    },
+    {
+      "params": {
+        "answers": [
+          {
+            "correct": true,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003eunderflow\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003eoverflow\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003esplit\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003emiscoloring\u003c/div\u003e\n"
+          }
+        ],
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 99,
+            "feedback": "Please review the course materials."
+          },
+          {
+            "from": 100,
+            "to": 100,
+            "feedback": "Excellent!"
+          }
+        ],
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": false,
+          "enableCheckButton": true,
+          "type": "multi",
+          "singlePoint": true,
+          "randomAnswers": true,
+          "showSolutionsRequiresInput": true,
+          "disableImageZooming": false,
+          "confirmCheckDialog": false,
+          "confirmRetryDialog": false,
+          "autoCheck": false,
+          "passPercentage": 100,
+          "showScorePoints": true
+        },
+        "UI": {
+          "checkAnswerButton": "Check",
+          "showSolutionButton": "Show solution",
+          "tryAgainButton": "Retry",
+          "tipsLabel": "Show tip",
+          "scoreBarLabel": "You got :num out of :total points",
+          "tipAvailable": "Tip available",
+          "feedbackAvailable": "Feedback available",
+          "readFeedback": "Read feedback",
+          "wrongAnswer": "Wrong answer",
+          "correctAnswer": "Correct answer",
+          "shouldCheck": "Should have been checked",
+          "shouldNotCheck": "Should not have been checked",
+          "noInput": "Please answer before viewing the solution"
+        },
+        "confirmCheck": {
+          "header": "Finish ?",
+          "body": "Are you sure you wish to finish ?",
+          "cancelLabel": "Cancel",
+          "confirmLabel": "Finish"
+        },
+        "confirmRetry": {
+          "header": "Retry ?",
+          "body": "Are you sure you wish to retry ?",
+          "cancelLabel": "Cancel",
+          "confirmLabel": "Confirm"
+        },
+        "question": "\u003cp\u003eIf the red-black tree were represented by a corresponding 2-4 tree, what condition would be represented after deleting \"bird\"?\u003c/p\u003e\n",
+        "media": {
+          "library": "H5P.Image 1.1",
+          "params": {
+            "contentName": "Image",
+            "alt": "Image for the question: If the red-black tree were represented by a corresponding 2-4 tree, what condition would be represented after deleting \"bird\"?",
+            "file": {
+              "path": "../../images/rbTreeDelete.png",
+              "mime": "image/png",
+              "width": 200,
+              "height": 200
+            }
+          }
+        }
+      },
+      "library": "H5P.MultiChoice 1.13"
+    },
+    {
+      "params": {
+        "answers": [
+          {
+            "correct": true,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003edouble-black\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003edouble-red\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003edouble leaf\u003c/div\u003e\n"
+          },
+          {
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "",
+              "notChosenFeedback": ""
+            },
+            "text": "\u003cdiv\u003emiscoloring\u003c/div\u003e\n"
+          }
+        ],
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 99,
+            "feedback": "Please review the course materials."
+          },
+          {
+            "from": 100,
+            "to": 100,
+            "feedback": "Excellent!"
+          }
+        ],
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": false,
+          "enableCheckButton": true,
+          "type": "multi",
+          "singlePoint": true,
+          "randomAnswers": true,
+          "showSolutionsRequiresInput": true,
+          "disableImageZooming": false,
+          "confirmCheckDialog": false,
+          "confirmRetryDialog": false,
+          "autoCheck": false,
+          "passPercentage": 100,
+          "showScorePoints": true
+        },
+        "UI": {
+          "checkAnswerButton": "Check",
+          "showSolutionButton": "Show solution",
+          "tryAgainButton": "Retry",
+          "tipsLabel": "Show tip",
+          "scoreBarLabel": "You got :num out of :total points",
+          "tipAvailable": "Tip available",
+          "feedbackAvailable": "Feedback available",
+          "readFeedback": "Read feedback",
+          "wrongAnswer": "Wrong answer",
+          "correctAnswer": "Correct answer",
+          "shouldCheck": "Should have been checked",
+          "shouldNotCheck": "Should not have been checked",
+          "noInput": "Please answer before viewing the solution"
+        },
+        "confirmCheck": {
+          "header": "Finish ?",
+          "body": "Are you sure you wish to finish ?",
+          "cancelLabel": "Cancel",
+          "confirmLabel": "Finish"
+        },
+        "confirmRetry": {
+          "header": "Retry ?",
+          "body": "Are you sure you wish to retry ?",
+          "cancelLabel": "Cancel",
+          "confirmLabel": "Confirm"
+        },
+        "question": "\u003cp\u003eWhat condition is represented by \u003ccode\u003etree.left(tree.left(tree.root()))\u003c/code\u003e?\u003c/p\u003e\n",
+        "media": {
+          "library": "H5P.Image 1.1",
+          "params": {
+            "contentName": "Image",
+            "alt": "Image for the question: What condition is represented by \u003ccode\u003etree.left(tree.left(tree.root()))\u003c/code\u003e?",
+            "file": {
+              "path": "../../images/rbTreeDelete.png",
+              "mime": "image/png",
+              "width": 200,
+              "height": 200
+            }
+          }
+        }
+      },
+      "library": "H5P.MultiChoice 1.13"
+    }
+  ],
+  "introPage": {
+    "showIntroPage": false,
+    "startButtonText": "Start Quiz",
+    "introduction": ""
+  },
+  "texts": {
+    "prevButton": "Previous",
+    "nextButton": "Next",
+    "finishButton": "Finish",
+    "textualProgress": "Question: @current of @total questions",
+    "questionLabel": "Question",
+    "jumpToQuestion": "Jump to question %d",
+    "readSpeakerProgress": "Question @current of @total",
+    "unansweredText": "Unanswered",
+    "answeredText": "Answered",
+    "currentQuestionText": "Current question"
+  },
+  "endGame": {
+    "showResultPage": true,
+    "solutionButtonText": "Show solution",
+    "finishButtonText": "Finish",
+    "showAnimations": false,
+    "skippable": false,
+    "skipButtonText": "Skip video",
+    "message": "Your result:",
+    "retryButtonText": "Retry",
+    "noResultMessage": "Finished",
+    "overallFeedback": [
+      {
+        "from": 0,
+        "to": 100,
+        "feedback": "You got @score points of @total possible."
+      }
+    ],
+    "oldFeedback": {
+      "successGreeting": "Congratulations!",
+      "successComment": "Excellent work!",
+      "failGreeting": "Oh, no!",
+      "failComment": "Please review the lab and/or course materials, visit office hours, or post on Piazza."
+    },
+    "showSolutionButton": false
+  },
+  "override": {
+    "showSolutionButton": "off",
+    "retryButton": "off",
+    "checkButton": true
+  },
+  "disableBackwardsNavigation": false,
+  "randomQuestions": false
+}

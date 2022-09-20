@@ -1,0 +1,1 @@
+{% assign icons = site.data.icons %}{% for currentIcon in icons %}{% if currentIcon.name == include.type %}<img src="{{ site.baseurl }}/{{ currentIcon.url }}" width="{% if include.width %}{{ include.width }}{% else %}50px{% endif %}" class="img-responsive"/>{% endif%}{% endfor%}

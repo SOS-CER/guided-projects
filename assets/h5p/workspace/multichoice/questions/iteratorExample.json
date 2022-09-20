@@ -1,0 +1,117 @@
+{
+  "answers": [
+    {
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      },
+      "text": "\u003cdiv\u003eFALSE\u003c/div\u003e\n"
+    },
+    {
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      },
+      "text": "\u003cdiv\u003eNoSuchElementException\u003c/div\u003e\n"
+    },
+    {
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      },
+      "text": "\u003cdiv\u003e1\u003c/div\u003e\n"
+    },
+    {
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      },
+      "text": "\u003cdiv\u003e5\u003c/div\u003e\n"
+    },
+    {
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      },
+      "text": "\u003cdiv\u003eTRUE\u003c/div\u003e\n"
+    },
+    {
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      },
+      "text": "\u003cdiv\u003enull\u003c/div\u003e\n"
+    }
+  ],
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 99,
+      "feedback": "Please review the course materials."
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Excellent!"
+    }
+  ],
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": false,
+    "enableCheckButton": true,
+    "type": "multi",
+    "singlePoint": true,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "disableImageZooming": false,
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true
+  },
+  "UI": {
+    "checkAnswerButton": "Check",
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "confirmCheck": {
+    "header": "Finish ?",
+    "body": "Are you sure you wish to finish ?",
+    "cancelLabel": "Cancel",
+    "confirmLabel": "Finish"
+  },
+  "confirmRetry": {
+    "header": "Retry ?",
+    "body": "Are you sure you wish to retry ?",
+    "cancelLabel": "Cancel",
+    "confirmLabel": "Confirm"
+  },
+  "question": "\u003cp\u003eGiven the \u003ccode\u003elist \u003d [2, 4, 3, 5, 1]\u003c/code\u003e, what is returned after: \u003cbr\u003e\u003ccode\u003eIterator\u003cInteger\u003e it \u003d list.iterator(); \u003cbr\u003eit.next();\u003cbr\u003eit.next();\u003cbr\u003eit.next();\u003cbr\u003eit.next();\u003cbr\u003eit.next();\u003cbr\u003ereturn it.hasNext()\u003c/code\u003e\u003c/p\u003e\n",
+  "media": {
+    "library": "H5P.Image 1.1",
+    "params": {}
+  }
+}

@@ -1,0 +1,13 @@
+{% for lab in site.data.tasks %}
+   {% assign thisID = lab.id | remove: ' ' | downcase %}
+   {% if thisID == page.pagegroup %}
+       {% assign thisLab = lab %}
+   {% endif %}
+{% endfor %}
+
+{% capture lo %}
+This workshop assesses the following course learning objectives:
+{% for obj in site.data.objectives %}{% assign wID = page.pagegroup | replace: "workshop", "W0" %}{% if obj.assignments contains wID %} * {{ obj.id }}: {{obj.text}}
+{% endif %}{% endfor %}
+{% endcapture %}
+{% include callout.html type="learningOutcomes" content=lo %}

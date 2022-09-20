@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body data-spy="scroll" data-target="#toc-sidebar">
+    <a class="sr-only" href="#main_content_wrap">Skip to main content</a>
+	<!-- Button to jump back to the top of the webpage -->
+    {% include topButton.html %}
+	<div class="wrapper container">
+		<!-- HEADER -->
+		{% include header.html %}
+		<!-- MAIN CONTENT -->
+		<div id="main" class="row">
+			{% if page.toc %}	
+			<nav id="toc-sidebar" class="col-xs-3 sticky toc-sidebar hidden-print">
+				{% include toc.html html=content h_min=1 h_max=3 %}
+			</nav>
+			<div id="mainContent" class="col-xs-9">
+			{% else %}
+			<div id="mainContent" class="col-xs-12">
+			{% endif %}
+			
+			<div>
+				{{ content }}
+			</div>
+			{% if page.navigation %}{% include navigation.html %}{% endif %}
+			</div>
+		</div>
+
+	</div>
+	<!-- FOOTER  -->
+	{% include footer.html %}
+</body>
+
+</html>

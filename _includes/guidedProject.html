@@ -1,0 +1,44 @@
+<div id="gpList">
+{% assign semesterTime = 0 %}
+{% capture gpList %}
+<table>
+   <thead>
+	   <tr>
+			 <th>Guided Project</th>
+			 <th>Time Estimate</th>
+	   </tr>
+   </thead>
+   <tbody>
+{% assign gps = site.data.tasks %}
+  {% for gp in gps %}
+    {% assign totalTime = 0 %}				
+    {% for task in gp.tasks %}
+       {% assign totalTime = totalTime | plus: task.time %}
+    {% endfor %}
+    {% assign hours = totalTime | divided_by: 60 %}
+    {% assign minutes = totalTime | modulo: 60 %}
+<tr>
+<td><strong><a href="{{gp.directory | split: '_' | index: 1}}">{{ gp.id }}: {{ gp.title }}</a></strong></td>
+<td><em>{{ hours }} hour{% if hours != 1 %}s{% endif %} {{ minutes }} minute{% if minutes != 1 %}s{% endif %}</em></td>
+</tr>				
+{% assign semesterTime = semesterTime | plus: totalTime %}
+{% assign totalTime = 0 %}
+{% endfor %}
+
+{% assign hours = semesterTime | divided_by: 60 %}
+{% assign minutes = semesterTime | modulo: 60 %}
+   </tbody>
+   <tfoot>
+   <tr>
+         <td>*Total Estimated Time*:</td>
+         <td>{{ hours }} hour{% if hours != 1 %}s{% endif %} {{ minutes }} minute{% if minutes != 1 %}s{% endif %}</td>
+   </tr>
+   </tfoot>
+</table>
+<em>* Times are only estimates. It may take you less time or more time depending on how much debugging effort is required for your specific implementation. Use the relative numbers to help guide you: for example, a task labeled as "5 minutes" should not require as much effort as a task labeled "20 minutes", regardless of how much time it takes to actually complete the task.</em>
+{% endcapture %}
+{{ gpList }}
+</div>
+
+
+

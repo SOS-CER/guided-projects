@@ -1,0 +1,33 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ site.title | default: site.github.repository_name }} : {{ site.description | default: site.github.project_tagline }}">
+
+    <title>{{ page.title | default: site.github.repository_name }}</title>
+	
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdn.ncsu.edu/brand-assets/bootstrap/css/bootstrap.min.css">
+	
+
+	<!-- jQuery -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://cdn.ncsu.edu/brand-assets/bootstrap/js/bootstrap.min.js"></script>
+	
+    <!-- Web Fonts (NCSU Branding) -->
+    <link href="https://cdn.ncsu.edu/brand-assets/fonts/include.css" rel="stylesheet" type="text/css" />
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="https://brand.ncsu.edu/favicon.ico" />
+	<!-- Custom Styles -->
+	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/csc.css">
+	
+	<!-- NCSU Utility Bar -->
+	<script src="https://cdn.ncsu.edu/brand-assets/utility-bar/ub.php?&placeholder=Search&maxWidth=100%&color=gray&showBrick=1"></script>
+	
+	{% if site.authentication %}
+	<!--Google Authentication-->
+	<meta name="google-signin-client_id" content="365868311870-gc02m4adq4vtppcotr454l323sl55n5n.apps.googleusercontent.com">
+	{% endif %}
+</head>

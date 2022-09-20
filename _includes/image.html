@@ -1,0 +1,6 @@
+<br/>
+<figure>
+<img src="{{ include.file }}" alt="{% if include.caption %}{{include.caption}}{% else %}Image{% endif %}"  class="center-image img-responsive" style="width:{% if include.width %}{{include.width}};{% endif %}{% if include.height %}height:{{include.height}};{% endif %}">
+<figcaption>{% if include.caption %}{{include.caption}}{% else %}Image{% endif %}</figcaption>
+</figure>
+<br/>

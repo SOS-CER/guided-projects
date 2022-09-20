@@ -1,0 +1,22 @@
+<!-- DO NOT TOC -->
+{% for lab in site.data.tasks %}
+   {% assign thisID = lab.id | remove: ' ' | downcase %}
+   {% if thisID == page.pagegroup %}
+       {% assign thisLab = lab %}
+   {% endif %}
+{% endfor %}
+
+{% assign directory = thisLab.directory %}
+
+{% capture final %}
+{% endcapture %}
+<div class="visible-print">
+{% for task in thisLab.tasks %}
+{% capture full %}
+{% include_relative {{task.page}}.md %}
+{% endcapture %}
+{% assign raw = full | replace_first: '---','<!--' | replace_first: '---','-->' %} 
+{% assign final = final | append: raw %}
+{% endfor %}
+{{ final | markdownify }}
+</div>

@@ -1,0 +1,175 @@
+---
+---
+/***********************************************************************
+Styles for Callout Box
+***********************************************************************/
+
+$wolfpack-red: #CC0000;
+$wolfpack-black: #000000;
+$wolfpack-white: #FFFFFF;
+  
+$gray10: #F2F2F2;
+$gray25: #CCCCCC;
+$gray60: #666666;
+$gray90: #333333;
+  
+$reynoldsred: #990000;
+$pyromanflame: #D14905;
+$huntyellow: #FDD726;
+$genomicgreen: #7d8C1F;
+$innovationblue: #427E93;
+$bioindigo: #4156A1;
+
+div.callout {
+	width: 97%;
+	float: left;
+	color: $wolfpack-black;
+	position: relative;
+	border-radius: 3px;
+	box-shadow: 0px 0px 20px #999;
+	margin: 15px;
+	min-height: 75px;
+	border: 1px solid $wolfpack-black;
+
+    h1, h2, h3, h4, h5, h6 {
+		color: darken($wolfpack-black, 60%);
+		border-bottom: 1px dashed $genomicgreen;
+		/**float:left;**/
+		width:100%;
+		padding-bottom: 0px;
+		margin: 0px 0;
+	}
+}
+
+.callout::before {
+	content: "";
+	width: 0px;
+	height: 0px;
+	border: 0.8em solid transparent;
+	position: absolute;
+}
+
+.callout.top::before {
+	left: 45%;
+	bottom: -20px;
+	border-top: 10px solid inherit;
+}
+
+.callout.bottom::before {
+	left: 45%;
+	top: -20px;
+	border-bottom: 10px solid inherit;
+}
+
+.callout.left::before {
+	right: -20px;
+	top: 40%;
+	border-left: 10px solid inherit;
+}
+
+.callout.right::before {
+	left: -20px;
+	top: 40%;
+	border-right: 10px solid inherit;
+}
+
+.callout.top-left::before {
+	left: 7px;
+	bottom: -20px;
+	border-top: 10px solid inherit;
+}
+
+.callout.top-right::before {
+	right: 7px;
+	bottom: -20px;
+	border-top: 10px solid inherit;
+}
+
+.callout table {
+  position: center;
+  border: 1px solid #CCCCCC;
+  margin-bottom: 20px;
+  text-align: left;
+  color: black;
+ }
+ 
+.callout tbody > tr:nth-of-type(odd) {
+   background-color: #f9f9f9;
+}
+
+.callout tbody > tr:nth-of-type(even) {
+   background-color: #fff;
+}
+
+.callout tbody > tr:hover {
+  background-color: #f5f5f5;
+}
+
+.callout th {
+  font-family: "UniversRoman", Helvetica, Arial, sans-serif;
+  padding: 5px;
+  background: #333333;
+  color: #fff;
+ }
+
+.callout td {
+  padding: 5px;
+  border: 1px solid #333333;
+ }
+ 
+.callout-leftCol {
+	min-width: 54px;
+	max-width: 54px;
+	width: 10%;
+	border-style: none;
+	padding: 0px;
+	margin: auto;
+	clear: left;	/* Do not allow anything to float to the left of this */
+	float: left;
+	min-height:inherit;
+	height:100%;	
+}
+
+.callout-leftCol div, img {
+	padding: 0px 0px 8px 8px;
+	position: auto;
+	margin: auto;
+}
+
+.callout-rightCol {
+    background: rgba( $wolfpack-white, .6);
+	color: $wolfpack-black;
+	position: relative;
+	border-style: none;
+	min-height: inherit;
+	height: 100%;
+	padding: 2px 10px;
+	margin-left: 60px;
+	/**clear: right;**/
+	text-align: left;
+	font-family: "UniversRoman", Arial, sans-serif;	/* Can comment out to inherit page fonts */
+}
+
+.bestPractices {
+	background-color: $genomicgreen;
+}
+
+.learningOutcomes {
+	background-color: $reynoldsred;
+}
+
+.conceptualKnowledge {
+	background-color: $bioindigo;
+}
+
+.reminder {
+	background-color: $huntyellow;
+}
+
+.tools {
+	background-color: $pyromanflame;
+}
+
+.default {
+	background-color: $huntyellow;
+}

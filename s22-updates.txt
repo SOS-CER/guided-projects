@@ -1,0 +1,3 @@
+s22-updates
+
+- Update all GP rubrics to include commit message quality

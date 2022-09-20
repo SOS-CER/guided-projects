@@ -1,0 +1,58 @@
+<div id="taskList">
+{% assign totalTime = 0 %}
+{% assign count = 1 %}
+{% capture taskList %}
+{% for lab in site.data.tasks %}
+   {% assign thisID = lab.id | remove: ' ' | downcase %}
+   {% if thisID == include.assignment %}
+       {% assign thisLab = lab %}
+   {% endif %}
+{% endfor %}
+<table>
+   <thead>
+      <tr>
+         <th style="width:40%;">Task</th>
+         <th style="width:15%;">Time Estimate</th>
+         <th style="width:45%;">Description</th>
+      </tr>
+   </thead>
+   <tbody>
+{% assign taskOrder = thisLab.tasks %}
+{% assign directory = thisLab.directory %}
+{% for task in taskOrder %}
+    {% assign currentPage = task.page | remove: "[" | remove: "]" | remove: '"' | lstrip | rstrip%}
+    {% for doc in site.documents %}
+        {% assign currentFileName = doc.path | split: "/" |
+  last | remove: ".md" | lstrip | rstrip %}
+            {% if currentFileName == currentPage %}
+  {% assign curDir = doc.path |remove: currentFileName |remove: ".md"
+  %} 
+        {% if curDir == directory %} 
+                {% assign url = site.baseurl | append: doc.url %}
+{% assign totalTime = totalTime | plus: task.time %}				
+<tr>
+<td><strong>{{count}}. <a href="{{task.page}}">{{ task.title }}</a></strong></td><td class="divTableCell"><em>{{ task.time }} minutes</em></td><td>{{ task.description }}</td></tr>				
+{% assign count = count | plus: 1 %}
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+{% endfor %}
+
+{% assign hours = totalTime | divided_by: 60 %}
+{% assign minutes = totalTime | modulo: 60 %}
+   </tbody>
+   <tfoot>
+      <tr>
+         <td>Total Estimated Time*:</td>
+         <td>{{ hours }} hour{% if hours != 1 %}s{% endif %} {{ minutes }} minute{% if minutes != 1 %}s{% endif %}</td>
+         <td></td>
+      </tr>
+   </tfoot>
+</table>
+<em>* Times are only estimates. It may take you less time or more time depending on how much debugging effort is required for your specific implementation. Use the relative numbers to help guide you: for example, a task labeled as "5 minutes" should not require as much effort as a task labeled "20 minutes", regardless of how much time it takes to actually complete the task.</em>
+{% endcapture %}
+{{ taskList }}
+</div>
+
+
+

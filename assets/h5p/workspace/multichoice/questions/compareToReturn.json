@@ -1,0 +1,108 @@
+{
+  "answers": [
+    {
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      },
+      "text": "\u003cdiv\u003ethe \u003ccode\u003e.equals\u003c/code\u003e method returns true\u003c/div\u003e\n"
+    },
+    {
+      "correct": true,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      },
+      "text": "\u003cdiv\u003ethe two objects being compared should be considered equal to each other\u003c/div\u003e\n"
+    },
+    {
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      },
+      "text": "\u003cdiv\u003ethe \u003ccode\u003e.equals\u003c/code\u003e method returns false\u003c/div\u003e\n"
+    },
+    {
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      },
+      "text": "\u003cdiv\u003e\u0027this\u0027 object should appear \u003cemphasis\u003ebefore\u003c/emphasis\u003e the \u0027other\u0027 object\u003c/div\u003e\n"
+    },
+    {
+      "correct": false,
+      "tipsAndFeedback": {
+        "tip": "",
+        "chosenFeedback": "",
+        "notChosenFeedback": ""
+      },
+      "text": "\u003cdiv\u003e\u0027this\u0027 object should appear \u003cemphasis\u003eafter\u003c/emphasis\u003e the \u0027other\u0027 object\u003c/div\u003e\n"
+    }
+  ],
+  "overallFeedback": [
+    {
+      "from": 0,
+      "to": 99,
+      "feedback": "Please review the course materials."
+    },
+    {
+      "from": 100,
+      "to": 100,
+      "feedback": "Excellent!"
+    }
+  ],
+  "behaviour": {
+    "enableRetry": true,
+    "enableSolutionsButton": false,
+    "enableCheckButton": true,
+    "type": "multi",
+    "singlePoint": false,
+    "randomAnswers": true,
+    "showSolutionsRequiresInput": true,
+    "disableImageZooming": false,
+    "confirmCheckDialog": false,
+    "confirmRetryDialog": false,
+    "autoCheck": false,
+    "passPercentage": 100,
+    "showScorePoints": true
+  },
+  "UI": {
+    "checkAnswerButton": "Check",
+    "showSolutionButton": "Show solution",
+    "tryAgainButton": "Retry",
+    "tipsLabel": "Show tip",
+    "scoreBarLabel": "You got :num out of :total points",
+    "tipAvailable": "Tip available",
+    "feedbackAvailable": "Feedback available",
+    "readFeedback": "Read feedback",
+    "wrongAnswer": "Wrong answer",
+    "correctAnswer": "Correct answer",
+    "shouldCheck": "Should have been checked",
+    "shouldNotCheck": "Should not have been checked",
+    "noInput": "Please answer before viewing the solution"
+  },
+  "confirmCheck": {
+    "header": "Finish ?",
+    "body": "Are you sure you wish to finish ?",
+    "cancelLabel": "Cancel",
+    "confirmLabel": "Finish"
+  },
+  "confirmRetry": {
+    "header": "Retry ?",
+    "body": "Are you sure you wish to retry ?",
+    "cancelLabel": "Cancel",
+    "confirmLabel": "Confirm"
+  },
+  "question": "\u003cp\u003eThe \u003ccode\u003ecompareTo\u003c/code\u003e method should return 0 when...\u003c/p\u003e\n",
+  "media": {
+    "library": "H5P.Image 1.1",
+    "params": {}
+  }
+}

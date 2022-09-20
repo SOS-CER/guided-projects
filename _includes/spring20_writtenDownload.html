@@ -1,0 +1,74 @@
+<p>Download either the <strong>PDF</strong> or <strong>DOCX</strong> versions of the assignment to get started:
+</p>
+{% assign file = include.file | split: "/" | last %}
+{% assign url = "/assets/written/" | append: include.file %}
+{% for static_file in site.static_files %}
+  {% assign docxFile = url | append: ".docx" %}
+  {% assign pdfFile = url | append: ".pdf" %}
+  {% if static_file.path contains docxFile %}
+	{% assign docxexists = true %}
+  {% endif %}
+  {% if static_file.path contains pdfFile %}
+	{% assign pdfexists = true %}
+  {% endif %}  
+{% endfor %}
+<div align="center">
+  <div class="download">
+    <div align="left">
+{% if pdfexists == true %}
+	  <a target="_blank" id="pdfDownload" href="{{site.baseurl}}{{ url }}.pdf" style="text-decoration:none;">{% include icon.html type="pdf" width="100px" %}
+	     <div class="downloadText">Download {{ include.file }}.pdf</div>
+	  </a><br/>
+{% else %}
+	{% include icon.html type="pdf" width="100px" %}
+	<div class="downloadText">The assignment file has not been posted yet. Please check again later.</div><br/>
+{% endif %}
+	</div>
+  </div>
+</div>
+<div align="center">
+  <div class="download">
+    <div align="left">
+{% if docxexists == true %}
+	  <a target="_blank" id="docxDownload" href="{{site.baseurl}}{{ url }}.docx" style="text-decoration:none;">{% include icon.html type="docx" width="100px" %}
+	     <div class="downloadText">Download {{include.file}}.docx</div>
+	  </a><br/>
+{% else %}
+	{% include icon.html type="docx" width="100px" %}
+	<div class="downloadText">The assignment file has not been posted yet. Please check again later.</div><br/>
+{% endif %}
+	</div>
+  </div>
+</div>
+
+<input id="pageURL" type="hidden" name="page" value="{{page.url}}">
+
+<script>
+$('#pdfDownload').click(function(e) {
+	var page = $('#pageURL').val();
+	var id = $('#email').val().replace("@ncsu.edu","");
+	var url = "https://script.google.com/macros/s/AKfycbzOmk8uGAixONAR1qSLbWVYZUENj3NmnmGsnLSE1fhA_eSlspdT/exec?callback=?";
+	var o = {
+		"id": id,
+		"type": "pdf",
+		"assignment": page
+	}
+	var jqxhr = $.post( url, o);
+});
+
+$('#docxDownload').click(function(e) {
+	var page = $('#pageURL').val();
+	var id = $('#email').val().replace("@ncsu.edu","");
+	var url = "https://script.google.com/macros/s/AKfycbzOmk8uGAixONAR1qSLbWVYZUENj3NmnmGsnLSE1fhA_eSlspdT/exec?callback=?";
+	var o = {
+		"id": id,
+		"type": "docx",
+		"assignment": page
+	}
+	var jqxhr = $.post( url, o);
+});
+</script>
+
+
+  
+  

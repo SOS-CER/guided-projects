@@ -1,0 +1,62 @@
+{% for item in site.data.tasks %}
+   {% assign lowerID = item.id | remove: ' ' | downcase %}
+   {% if page.pagegroup == lowerID %}
+      {% assign lab = item %}
+	  {% break %}
+   {% endif %}
+{% endfor %}
+<ul class="pager">
+{% assign index = 0 %}
+{% assign foundIndex = 0 %}
+{% assign currentFilename = page.path | split: "/" | last | remove: ".md" %}
+{% assign directory = lab.directory %}
+{% assign myCollection = lab %}
+{% assign collectionSize = myCollection.tasks | size %}
+{% assign myCollectionOrder = myCollection.tasks %}
+
+{% for p in myCollection.tasks %}
+   {% if currentFilename == p.page %}
+      {% assign foundIndex = index %}
+   {% endif %}
+   {% assign index = index | plus: 1 %}
+{% endfor %}
+
+<!-- Create the previous page arrow -->
+{% if foundIndex > 0 %}
+    {% assign prevIndex = foundIndex | minus: 1 %}
+    {% assign prevPage = myCollectionOrder[prevIndex].page | remove: "[" | remove: "]" | remove: '"' | lstrip | rstrip %}
+    {% for doc in site.documents %}
+        {% assign currentFileName = doc.path | split: "/" | last | remove: ".md" %}
+     {% assign curDir = doc.path |remove: currentFileName |remove: ".md"
+  %} 
+        {% if curDir ==  directory %} 
+            {% if currentFileName == prevPage %}
+                {% assign prevDescription = doc.description %}
+                {% assign url = site.baseurl | append: doc.url %}
+                {% break %}    
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+    <li class="previous"><a href="{{ url }}"><span class="glyphicon glyphicon-bold-arrow-left" data-alt="return to the previous page"></span>Previous: {{ prevDescription | markdownify | remove: "<p>" | remove: "</p>"}}</a></li>
+{% endif %}
+
+<!-- Create the next page arrow -->
+{% assign myCollectionOrderSize = collectionSize | minus: 1 %}
+{% if foundIndex < myCollectionOrderSize %}
+    {% assign nextIndex = foundIndex | plus: 1 %}
+    {% assign nextPage = myCollectionOrder[nextIndex].page | remove: "[" | remove: "]" | remove: '"' | lstrip | rstrip%}
+    {% for doc in site.documents %}
+        {% assign currentFileName = doc.path | split: "/" | last | remove: ".md" %}
+     {% assign curDir = doc.path |remove: currentFileName |remove: ".md"
+  %} 
+        {% if curDir ==  directory %} 
+            {% if currentFileName == nextPage %}
+                {% assign nextDescription = doc.description %}
+                {% assign url = site.baseurl | append: doc.url %}
+                {% break %}    
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+    <li class="next"><a href="{{ url }}">Next: {{ nextDescription | markdownify | remove: '<p>' | remove: '</p>' }}<span class="glyphicon glyphicon-bold-arrow-right" data-alt="go to the next page"></span></a></a></li>
+{% endif %}
+</ul>

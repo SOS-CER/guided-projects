@@ -1,0 +1,28 @@
+{% for item in site.data.tasks %}
+   {% assign lowerID = item.id | remove: ' ' | downcase %}
+   {% if page.pagegroup == lowerID %}
+      {% assign lab = item %}
+	  {% break %}
+   {% endif %}
+{% endfor %}
+
+{% assign index = 0 %}
+{% assign foundIndex = 0 %}
+{% assign currentFilename = page.path | split: "/" | last | remove: ".md" %}
+{% assign directory = lab.directory %}
+{% assign myCollection = lab %}
+{% assign collectionSize = myCollection.tasks | size | minus: 1 %}
+{% assign myCollectionOrder = myCollection.tasks %}
+
+{% for p in myCollection.tasks %}
+   {% if currentFilename == p.page %}
+      {% assign foundIndex = index %}
+   {% endif %}
+   {% assign index = index | plus: 1 %}
+{% endfor %}
+{% assign width = foundIndex | times: 100 | divided_by: collectionSize %}
+<div class="progress progress-striped active">
+  <div class="progress-bar"  role="progressbar" aria-valuenow="{{width}}" aria-valuemin="0" aria-valuemax="100" style="width: {{width}}%">
+    <span class="sr-only">{{width}}% Complete</span>
+  </div>
+</div>

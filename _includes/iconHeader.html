@@ -1,0 +1,29 @@
+<!--<div id="iconHeader" style="position: relative;">
+{% assign iconArray = include.type | split: "," %}
+{% assign count=0 %}
+{% for icon in iconArray %}
+{% capture offset %} {{ 55 | times: count }}{% endcapture %}
+{% capture p %} {{-40 | plus: offset }}{% endcapture %}
+{% assign currentIcon = site.data.icons[icon] %}
+<div class="icon" style="float:left; display:inline; position: absolute; left: -65px; top: {{p}}px; background-image: url({{ site.baseurl }}/{{ currentIcon.url }});" role="img" aria-label="{{ icon | capitalize }} Icon"></div>
+{% assign count=count | plus: 1 %}
+{% endfor %}
+</div>
+-->
+<div id="iconHeader" style="position: relative;">
+{% assign iconArray = include.type | split: "," %}
+{% assign count=0 %}
+{% for icon in iconArray %}
+{% capture offset %} {{ 55 | times: count }}{% endcapture %}
+{% capture p %} {{ -55 | plus: offset }}{% endcapture %}
+{% assign icons = site.data.icons %}
+{% for currentIcon in icons %}
+{% if currentIcon.name == icon %}
+<div class="icon" style="float:left; display:inline; position: absolute; left: -65px; top: {{p}}px; background-image: url({{ site.baseurl }}/{{ currentIcon.url }});" role="img" aria-label="{{ icon | capitalize }} Icon"></div>
+{% endif%}
+{% endfor%}
+{% assign count=count | plus: 1 %}
+{% endfor %}
+</div>
+
+

@@ -1,0 +1,52 @@
+{% capture quizContent %}
+{% assign dir = {{site.baseurl}} | append: '/assets/h5p' %}
+<link type="text/css" rel="stylesheet" media="all" href="{{dir}}/dist/styles/h5p.css" />
+<meta charset="utf-8" />
+<script type="text/javascript" src="{{dir}}/dist/js/h5p-standalone-main.js"></script>
+
+{% if include.type == 'set' %}
+{% assign h5pContent = {{dir}} | append: '/workspace/questionset' %}
+{% else %}
+{% assign h5pContent = {{dir}} | append: '/workspace/multichoice' %}
+{% endif %}
+<script type="text/javascript">
+function loadH5P{{include.name}}() {
+  (function($) {
+    $(function() {
+      $('.h5p-container-{{include.name}}').h5p({
+        id: '{{include.name}}',
+        frameJs: '{{dir}}/dist/js/h5p-standalone-frame.min.js',
+        frameCss: '{{dir}}/dist/styles/h5p.css',
+        h5pContent: '{{h5pContent}}',
+        h5pQuestionFile: '{{include.name}}'
+        });
+      });
+    })(H5P.jQuery);
+}
+</script>
+<div class="h5p-container-{{include.name}}"></div>
+{% endcapture %}
+
+<div class="panel panel-info hidden-print">
+  <div class="panel-heading">
+    <p class="h3 panel-title"><span class="glyphicon glyphicon-check"></span> Check your Understanding</p>
+  </div>
+  <div class="panel-body">
+    <span id="quizMessage-{{include.name}}"></span>
+	<div id="quizContent-{{include.name}}" {% if site.authentication %}style="display:none;" {% endif %}>{{quizContent | markdownify }}</div>
+{% if site.authentication %}{%else%}<script>loadH5P{{include.name}}();</script>{% endif %}
+  </div>
+</div>
+
+<script>
+function init{{include.name}}() {
+	var isSignedIn = gapi.auth2.getAuthInstance().isSignedIn.get();
+
+	if (!isSignedIn) {
+		document.getElementById("quizMessage-{{include.name}}").textContent = "To access the self-check questions, you must login with your NCSU Google account. You can find the login button at the top of this page.";
+	} else {
+		loadH5P{{include.name}}();
+		$('#quizContent-{{include.name}}').show();
+	}
+}
+</script>

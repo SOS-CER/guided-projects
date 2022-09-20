@@ -1,0 +1,43 @@
+organization: engr-csc216
+repository: engr-csc216/guided-projects
+contact: sarah_heckman@ncsu.edu
+repo: guided-projects
+baseurl: /engr-csc216/guided-projects
+
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+
+show_downloads: false
+google_analytics: 
+theme:
+authentication: true
+
+
+defaults:
+  - scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "page"
+
+
+collections:
+    gp1:
+        output: true
+    gp2:
+        output: true
+    gp3:
+        output: true
+    wolf-scheduler:
+        output: true    
+
+plugins: ["jekyll-relative-links", "jekyll/scholar"]       
+  
+scholar:
+    style: ieee

@@ -1,0 +1,64 @@
+<span id="authMessage" style="white-space: pre-wrap;"></span>
+<input id="email" type="hidden" value="anonymous">
+<div id="my-signin2"></div>
+<div id="signOutButton" style="display:none;text-align:right;">
+<a href="#" onclick="signOut();">Sign out</a>
+</div>
+<script>
+var auth2;
+
+function onSignIn(googleUser) {
+	setMessage("Signed in as " + googleUser.getBasicProfile().getEmail());
+	location.reload();
+}
+
+function handleClientLoad() {
+   gapi.load('client:auth2', initClient);
+}
+
+var initClient = (function() {
+    auth2 = gapi.auth2.init({
+        client_id: '{{site.authentication-client-id}}',
+		hosted_domain: 'ncsu.edu',
+    }).then(function () {
+		var isSignedIn = gapi.auth2.getAuthInstance().isSignedIn.get();
+
+		if (!isSignedIn) {
+			gapi.signin2.render('my-signin2', {
+			'onsuccess': 'onSignIn',
+			'longtitle': 'true',
+			'theme': 'dark'
+			});
+			document.getElementById("signOutButton").style.display = "none";
+		} else {
+			currentUser = gapi.auth2.getAuthInstance().currentUser.get();
+			var currentEmail = currentUser.getBasicProfile().getEmail();
+			setMessage("Signed in as " + currentEmail);
+			document.getElementById("signOutButton").style.display = "block";
+			document.getElementById("email").value = currentEmail;
+			
+			if(currentUser.getHostedDomain() !== 'ncsu.edu') {
+				signOut();
+			}
+		}
+	}).then( function() {
+		$("div[id^='quizContent']").each( function() {
+			var fName = $(this).attr("id");
+			fName = fName.split("-")[1];
+			window["init"+fName]();
+		});
+	});
+});
+
+function setMessage(message) {
+	document.getElementById("authMessage").textContent = message;
+}
+
+function signOut() {
+	var auth2 = gapi.auth2.getAuthInstance();
+	auth2.signOut();
+	location.reload();
+}
+</script>
+
+<script src="https://apis.google.com/js/platform.js?onload=handleClientLoad" async defer></script>

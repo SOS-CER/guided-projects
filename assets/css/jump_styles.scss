@@ -1,0 +1,41 @@
+---
+---
+/*************************************************************************************************************
+Styles for button to jump back to the top of the page
+*************************************************************************************************************/
+ 
+
+$wolfpack-red: #CC0000;
+$wolfpack-black: #000000;
+$wolfpack-white: #FFFFFF;
+  
+$gray10: #F2F2F2;
+$gray25: #CCCCCC;
+$gray60: #666666;
+$gray90: #333333;
+  
+$reynoldsred: #990000;
+$pyromanflame: #D14905;
+$huntyellow: #FDD726;
+$genomicgreen: #7d8C1F;
+$innovationblue: #427E93;
+$bioindigo: #4156A1;
+
+#myBtn {
+	display: none; /* Hidden by default */
+	position: fixed; /* Fixed/sticky position */
+	bottom: 20px; /* Place the button at the bottom of the page */
+	right: 30px; /* Place the button 30px from the right */
+	z-index: 99; /* Make sure it does not overlap */
+	border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: $bioindigo; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+}
+
+#myBtn:hover {
+    background-color:  $pyromanflame; /* Add a background on hover */
+}

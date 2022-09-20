@@ -1,0 +1,369 @@
+---
+---
+/**********************
+CSC GitHub Pages Theme
+by Jason King
+****************/
+
+@import url(github-light.css);
+@import url(callout_styles.css);
+@import url(table_styles.css);
+@import url(breadcrumb_styles.css);
+@import url(mention_styles.css);
+@import url(jump_styles.css);
+@import url(csc_styles.css);
+@import url(terminal.css);
+@import url(algorithm.css);
+@import url(java.css);
+@import url(text.css);
+@import url(sidebar.css);
+@import url(progressBar.css);
+@import url(download.css);
+@import url(divTable.css);
+@import url(authentication.css);
+
+$wolfpack-red: #CC0000;
+$wolfpack-black: #000000;
+$wolfpack-white: #FFFFFF;
+  
+$gray10: #F2F2F2;
+$gray25: #CCCCCC;
+$gray60: #666666;
+$gray90: #333333;
+  
+$reynoldsred: #990000;
+$pyromanflame: #D14905;
+$huntyellow: #FDD726;
+$genomicgreen: #7d8C1F;
+$innovationblue: #427E93;
+$bioindigo: #4156A1;
+  
+$header-background-color: $gray60;
+$title-text-color: $wolfpack-white;
+$description-text-color: $wolfpack-white;
+$header-link-color: $wolfpack-white;
+  
+$main-background-color: $gray25;
+$body-background-color: $wolfpack-white;
+$body-text-color: $wolfpack-black;
+$body-headers-color: $wolfpack-black;
+  
+$footer-background-color: $gray60;
+  
+/*******************************************************************************
+MeyerWeb Reset
+*******************************************************************************/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+/*******************************************************************************
+Theme Styles
+*******************************************************************************/
+
+body {
+  box-sizing: border-box;
+  color: $body-text-color;
+  background: $body-background-color;
+  font-size: 14px;
+  font-family: "UniversRoman", Arial, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 10px 0px 10px 0px;
+  font-weight: 700;
+  color: $body-headers-color;
+  font-family: "UniversRoman", Arial, sans-serif;
+  letter-spacing: -1px;
+  padding-top: 20px;
+  border-bottom: 1px dotted $gray60;
+  width:100%;
+}
+
+h1 {
+	padding-top: 40px;
+}
+
+p {
+	margin: 5px 0 10px 0;
+}
+
+a:hover, a:focus {
+	text-decoration: underline;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+img {
+  position: relative;
+  margin: 0 auto;
+  max-width: 90%;
+  padding: 5px;
+  margin: 2px 0 2px 0;
+}
+
+p img {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  text-align: center;
+  border: none;
+}
+
+pre code {
+  /*all: inherit;*/
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  font-size: 12px;
+  overflow: auto;
+  word-wrap: normal;
+  white-space: pre;
+}
+
+ul, ol, dl {
+  margin-bottom: 15px
+}
+
+ul {
+  list-style-position: inside;
+  padding-left: 20px;
+}
+
+ol {
+  list-style-position: inside;
+  list-style: decimal;
+  padding-left: 20px;
+}
+
+dl dt {
+  font-weight: bold;
+}
+
+dl dd {
+  padding-left: 20px;
+  font-style: italic;
+}
+
+dl p {
+  padding-left: 20px;
+  font-style: italic;
+}
+
+hr {
+  height: 1px;
+  margin-bottom: 5px;
+  border: none;
+  background: url('../images/bg_hr.png') repeat-x center;
+}
+
+.icon {
+	background-size: 50px 50px;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-width: 50px;
+	min-height: 50px;
+	width: 50px;
+	height: 50px;
+}
+
+.button {
+  background-color: $innovationblue;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+/*******************************************************************************
+Full-Width Styles
+*******************************************************************************/
+
+.header_outer {
+  width: 100%;
+}
+
+.header_inner {
+  position: relative;
+  max-width: 95%;
+  padding: 30px 10px;
+  margin: 0 auto;
+}
+
+.header_inner h1, h2{
+  padding: 0px 2px;
+}
+
+.header_inner code {
+  background-color: inherit;
+  color: inherit;
+}
+
+header a {
+  color: $header-link-color;
+  text-decoration: underline;
+}
+
+header h1 {
+  border-bottom: 1px dashed $gray10;
+  width:100%;
+}
+
+.main_outer {
+  width: 100%;
+}
+
+.main_inner {
+  position: relative;
+  max-width: 95%;
+  padding: 20px 10px;
+  margin: 0 auto;
+  background: $body-background-color;
+}
+
+.footer_inner {
+  position: relative;
+  max-width: 95%;
+  padding: 20px 10px;
+  margin: 0 auto;
+}
+
+footer a {
+  color: #F2F2F2;
+  text-decoration: underline;
+}
+
+footer p {
+  color: #f2f2f2;
+}
+
+#header_wrap {
+  background: $header-background-color;
+}
+
+#header_wrap .inner {
+  padding: 50px 10px 30px 10px;
+}
+
+#project_title {
+  margin: 0;
+  color: $title-text-color;
+  font-size: 42px;
+  font-weight: 700;
+  text-shadow: #111 0px 0px 10px;
+}
+
+#project_tagline {
+  color: $description-text-color;
+  font-size: 24px;
+  font-weight: 300;
+  background: none;
+  text-shadow: #111 0px 0px 10px;
+}
+
+#main_content_wrap {
+  background: $main-background-color;
+}
+
+#main_content {
+  padding-top: 20px;
+}
+
+#footer_wrap {
+  background: $footer-background-color;
+  padding-left: 1em;
+}
+
+/*******************************************************************************
+Small Device Styles
+*******************************************************************************/
+
+@media screen and (max-width: 480px) {
+  body {
+    font-size:14px;
+  }
+
+  #downloads {
+    display: none;
+  }
+
+  .inner {
+    min-width: 320px;
+    max-width: 480px;
+  }
+
+  #project_title {
+  font-size: 32px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 21px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  h5 {
+    font-size: 14px;
+  }
+
+  h6 {
+    font-size: 12px;
+  }
+
+  code, pre {
+    max-width: 480px;
+    font-size: 11px;
+  }
+
+}

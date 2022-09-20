@@ -1,0 +1,110 @@
+Updates
+- WolfScheduler use cases
+	- In wolf_scheduler folder
+	- at start of index.md
+	
+Task Pages
+DONE - gp1-eclipse-intro - TODO - GO BACK AND UPDATE SCREENSHOTS!!!
+DONE - gp1-create-project - < 1 minute
+DONE - gp1-github ~10 minutes
+	- TODO - update screenshots when I create videos to use the commit message tagging!
+DONE - gp1-source-gen ~13 minutes
+DONE - gp1-reduce-redundancy ~7 minutes
+DONE - gp1-unit-test-intro ~4.5 minutes
+DONE - gp1-static-analysis - 5 minutes
+DONE - gp1-course
+	- DONE switch section names to "Implement `setName()`" rather than the other way around - DONE
+	- DONE - STARTING TASK: combine setMeetingDays() and setCourseTime() together.  -DONE
+	- DONE Add exception error message to writeup - DONE
+	- DONE Add exception error message to tests. - DONE
+	- DONE Add which constants to use in each method to writeup. - DONE
+	- DONE Add the /100 %100 hint to time stuff - DONE
+	- DONE update requirements text in writeup - DONE
+	- DONE students can add private helper methods to the setMeetingDaysAndTime() method - DONE
+DONE - gp1-code-editing
+DONE - gp1-quick-fix
+DONE - gp1-file-test-intro
+DONE - gp1-libraries
+DONE - gp1-courserecordio - 45 minutes
+DONE - gp1-scheduler - 60 minutes
+	- DONE TODO Update the requirements based on changes
+DONE - gp1-wolfschedulergui - 2 mintues
+DONE - gp1-bbtp
+	- DONE - TODO update the black box test plan
+	- DONE TODO fix link to the se-materials stuff
+DONE - gp1-javadoc
+DONE - gp1 jenkins
+	DONE - Add information about console output to the Jenkins guide and here
+	DONE - Add information about how to fix any problems with changed teaching staff tests!
+DONE - gp1-conclusion
+DONE - spell check - global
+DONE - ***UPDATE development branch to `main`
+DONE - ***BUG FIX - in GUI - add extra conditionals to row check when selecting from tables:  || row == tableSchedule.getRowCount()
+- DONE BBPT -> System Test Plan
+
+DONE Update links to SE materials
+https://pages.github.ncsu.edu/engr-csc-software-development/software-lifecycle
+https://pages.github.ncsu.edu/engr-csc-software-development/practices-tools/overview/
+
+NO - Update blue ball to green ball!
+
+***Update suggested commit messages to use Ruth's suggested tagging.
+[Skeleton] Working on skeleton of X
+[Implementation] Finished implementing X or Worked on implementation of X
+[Refactoring] Refactored X to reduce redundancy
+[Static Analysis] Removed notifications from X
+[Test] Created tests for X
+[Fix] Fixed bug(s) in X
+[Style] Fixed style notification on X
+[GUI] Working on system testing
+[Debug] Trying to resolve X in class Y
+[Documentation] Generated Javadoc
+
+DONE - UPDATE CHECKSTYLE CONFIGURATION IN INSTALL GUIDE
+	DONE - Email to Tyler
+
+Videos - TODO!!!
+- Eclipse Introduction
+- GitHub Introduction
+- Source Code Generation
+- Reducing Redundancy
+
+
+Requirements
+DONE - Remove the restriction on the upper length of course name (we're allowing spaces and PE classes have a 4 letter prefix).
+	DONE - Updated UC1, S1 to include additional error checking on the characters
+
+Design 
+DONE - Update design diagrams to fix the constant values used in gp1-course.md file
+
+Teaching Staff Side Updates
+- DONE - Update CourseTest.java to match what is in GP1 (updates to CSC 216 stuff) 
+	GP1 and GP2 solutions are updated.
+
+Cross cutting items
+- add task item at the top of each page
+- add objective icon to outcomes page
+- Remove yellow boxes and make them reminder content
+- Add glance icon and GH reminder at the "Check Your Progress" step
+
+icon="objective"
+
+{% include iconHeader.html type="task" %}
+
+{% capture reminder-content %} 
+GitHub Resources:
+
+  * [Staging Files](https://pages.github.ncsu.edu/engr-csc-software-development/practices-tools/git/git-staging)
+  * [Committing Files](https://pages.github.ncsu.edu/engr-csc-software-development/practices-tools/git/git-commit)
+  * [Pushing Files](https://pages.github.ncsu.edu/engr-csc-software-development/practices-tools/git/git-push)
+{% endcapture %} {% include mention.html content=reminder-content type="reminder" title="Reference: Staging and Pushing to GitHub"%} 
+## Check Your Progress
+{% include iconHeader.html type="glance" %}
+
+
+
+  - [ ] Make sure that all fields, methods, and constructors are commented.
+  - [ ] Resolve all static analysis notifications.
+  - [ ] Fix test failures.
+  - [ ] Commit and push your code changes with a meaningful commit message.  Label your commit with "[Implementation]" for future you!
+  - [ ] Check Jenkins results for a green ball!  Fix any Jenkins issues.

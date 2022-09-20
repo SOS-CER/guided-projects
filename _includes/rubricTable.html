@@ -1,0 +1,31 @@
+{% assign project = include.project %}
+{% assign grade-category = include.grade-category %}
+
+<table>
+  <tr>
+    <th>Phase</th>
+    <th>Grade Item</th>
+	<th>Points</th>
+	<th>Details</th>
+  </tr>
+  {% assign total = 0 %}
+  {% for grade-item in site.data.grades.grades[project][grade-category] %}
+  <tr>
+    <td>{% if grade-item.icon %}
+	{% include icon.html type=grade-item.icon width="30px" %}
+	{% else %}&nbsp;
+	{% endif %}
+	</td>
+    <td>{{ grade-item.item }}</td>
+    <td align="right">{{ grade-item.points }}</td>
+	<td>{{ grade-item.details }}</td>
+  </tr>
+  {% assign total = total | plus:grade-item.points %}
+  {% endfor %}
+  <tr>
+    <td>&nbsp;</td>
+	<td><strong>Total Points</strong></td>
+	<td align="right"><strong>{{ total }}</strong></td>
+	<td>&nbsp;</td>
+  </tr>
+</table>

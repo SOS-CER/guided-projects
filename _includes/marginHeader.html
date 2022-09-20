@@ -1,0 +1,11 @@
+<div id="iconHeader" style="position: relative;">
+
+{% assign iconArray = include.type | split: "," %}
+{% assign count=0 %}
+{% for icon in iconArray %}
+{% assign currentIcon = site.data.icons[icon] %}
+<div class="icon" style="position: absolute; display:inline-block; left: -65px; top: 0px; background-image: url({{ site.baseurl }}/{{ currentIcon.url }});" role="img" aria-label="{{ icon | capitalize }} Icon">
+</div>
+{% endfor %}
+
+</div>

@@ -1,0 +1,49 @@
+w13:
+    author={Laurie Williams},
+    title={An Introduction to Software Engineering},
+    publisher={Amazon Digital Services LLC},
+    year=2013
+
+ieee10: 
+    journal={ISO/IEC/IEEE 24765:2010(E)}, 
+    title={Systems and software engineering -- Vocabulary}, 
+    year={2010}, 
+    pages={1-418}, 
+    keywords={IEEE standards;ISO standards;software engineering;IEEE Computer Society;IEEE Standard Glossary of Software Engineering Terminology;IEEE Std 610.12-1990;International Standard;Project Management Institute;information technology field;systems engineering;Dictionaries;IEC standards;IEEE standards;ISO standards;Software engineering;computer;dictionary;information technology;software engineering;systems engineering;terminology;vocabulary}, 
+    doi={10.1109/IEEESTD.2010.5733835}, 
+    month={Dec},
+
+marick97:
+    author={Brian Marick},
+    title={How to Misuse Code Coverage},
+    year={1997},
+
+ayewah08:
+    author={N. Ayewah and D. Hovemeyer and J. D. Morgenthaler and J. Penix and W. Pugh}, 
+    journal={IEEE Software}, 
+    title={Using Static Analysis to Find Bugs}, 
+    year={2008}, 
+    volume={25}, 
+    number={5}, 
+    pages={22-29}, 
+    keywords={Java;SQL;public domain software;security of data;software engineering;FindBugs;Java;SQL injection;open source static-analysis tool;runtime errors;security violations;software development;Computer bugs;Educational institutions;Java;Open source software;Production;Programming;Security;Software quality;Software tools;Testing;FindBugs;bug patterns;code quality;software defects;software quality;static analysis}, 
+    doi={10.1109/MS.2008.130}, 
+    ISSN={0740-7459}, 
+    month={Sept},
+
+ayewah07:
+ author = {Ayewah, Nathaniel and Pugh, William and Morgenthaler, J. David and Penix, John and Zhou, YuQian},
+ title = {Evaluating Static Analysis Defect Warnings on Production Software},
+ booktitle = {Proceedings of the 7th ACM SIGPLAN-SIGSOFT Workshop on Program Analysis for Software Tools and Engineering},
+ series = {PASTE '07},
+ year = {2007},
+ isbn = {978-1-59593-595-3},
+ location = {San Diego, California, USA},
+ pages = {1--8},
+ numpages = {8},
+ url = {http://doi.acm.org/10.1145/1251535.1251536},
+ doi = {10.1145/1251535.1251536},
+ acmid = {1251536},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {FindBugs, Java, bug patterns, bugs, false positives, software defects, software quality, static analysis},

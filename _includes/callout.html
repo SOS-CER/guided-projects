@@ -1,0 +1,49 @@
+{% if include.type=="bestPractices" %}
+  {% assign type = "success" %}
+  {% assign title= "Best Practices" %}
+{% elsif include.type=="learningOutcomes" %}
+  {% assign type = "info" %}
+  {% assign title= "Learning Outcomes" %}
+{% elsif include.type=="conceptualKnowledge" %}
+  {% assign type = "danger" %}
+  {% assign title= "Conceptual Knowledge" %}
+{% elsif include.type=="reminder" %}
+  {% assign type = "warning" %}
+  {% assign title= "Reminder " %}
+{% elsif include.type=="tools" %}
+  {% assign type = "resource" %}
+  {% assign title= "Tools" %}
+{% elsif include.type %}
+ {% assign type = include.type %}
+ {% assign title = "Note" %}
+{% else %}
+  {% assign type = "default" %}
+  {% assign title = "Note" %}
+{% endif %}
+{% if include.title %}
+ {% assign title = include.title %}
+{% endif %}
+
+
+<div class="bs-callout {% if include.type %}bs-callout-{{type}}{% else %}bs-callout-default{% endif %}">
+<div class="media">
+<a class="pull-left" href="#">
+{% if include.icon %}
+    {% assign iconArray = include.icon | split: "," %}
+    {% for icon in iconArray %}
+        {% assign numIcons = numIcons | plus: 1 %}
+		{% for x in site.data.icons %}
+		{% if x.name == icon %}
+        {% assign currentIcon = x %}
+        <img class="media-object" src="{{ currentIcon.url | prepend: "/" | prepend: site.baseurl }}" height="50px" alt="Callout Box Icon">
+		{% endif %}
+		{% endfor %}
+    {% endfor %}
+{% endif %}
+</a>
+<div class="media-body">    
+        <p class="h4">{{title | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+        {{include.content | markdownify }}
+</div>
+</div>
+</div>

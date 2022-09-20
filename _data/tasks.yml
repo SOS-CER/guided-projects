@@ -1,0 +1,186 @@
+    - gp1:
+      id: GP1
+      title: Software Development Practices and Tools
+      directory: _gp1/
+      progressBar: on
+      objectives:   
+        - Implement and test a multi-class software system from a given set of requirements and design.
+        - Use software engineering best practices like test-driven development, code coverage, static analysis, version control, continuous integration, and documentation with supporting tooling to implement and test object-oriented systems.
+      tasks: 
+            - title: Guided Task - Your First Eclipse Project
+              page: gp1-eclipse-intro
+              description: Create an Eclipse project and learn about the Eclipse Java Development perspective.
+              time: 15
+            - title: Independent Task - Create WolfScheduler
+              page: gp1-create-project
+              description: Create the WolfScheduler, which you will use for all three Guided Projects. 
+              time: 5
+            - title: Guided Task - Push WolfScheduler to GitHub
+              page: gp1-github
+              description: Push the WolfScheduler project to GitHub and learn how to use GitHub.
+              time: 30
+            - title: Guided Task - Java Source Generation
+              page: gp1-source-gen
+              description: Use Eclipse code generation to create a plain-old-java-object (POJO).
+              time: 30
+            - title: Guided Task - Encapsulation and Reducing Redundancy
+              page: gp1-reduce-redundancy
+              description: Encapsulate `Course` and remove redundant code.
+              time: 30
+            - title: Guided Task - A Very Brief Introduction to Unit Testing
+              page: gp1-unit-test-intro
+              description: Run provided JUnit test cases on Course.
+              time: 15
+            - title: Guided Task - Run Static Analysis Tools
+              page: gp1-static-analysis
+              description: Run static analysis tools on the WolfScheduler project and fix any notifications.
+              time: 10
+            - title: Independent Task - Finish Course
+              page: gp1-course
+              description: Finish implementing Course.
+              time: 90
+            - title: Guided Task - Code Editing Tools
+              page: gp1-code-editing
+              description: Explore Eclipse tools for auto-completion, code templates, and code formatting.
+              time: 15
+            - title: Guided Task - Eclipse Quick Fix Tool
+              page: gp1-quick-fix
+              description: Explore the Eclipse Quick Fix tool.
+              time: 15
+            - title: Guided Task - Testing with Files
+              page: gp1-file-test
+              description: Set up `WolfScheduler` for testing file I/O.
+              time: 10
+            - title: Guided Task - Working with the Java Libraries
+              page: gp1-libraries
+              description: Implement the skeleton of `CourseRecordIO` with classes and interfaces from the `java.io` package and the Java Collections Framework.
+              time: 15
+            - title: Independent Task - Finish CourseRecordIO
+              page: gp1-courserecordio
+              description: Implement and test CourseRecordIO.
+              time: 60
+            - title: Independent Task - Implement and Test WolfScheduler
+              page: gp1-scheduler
+              description: Implement and test WolfScheduler.
+              time: 150
+            - title: Guided Task - WolfSchedulerGUI
+              page: gp1-wolfschedulergui
+              description: Integrate WolfSchedulerGUI.
+              time: 10
+            - title: Guided Task - Run System Tests
+              page: gp1-stp
+              description: Run system tests on the WolfScheduler project.
+              time: 30
+            - title: Guided Task - Generate Javadoc
+              page: gp1-javadoc
+              description: Generate HTML documentation pages for the WolfScheduler project.
+              time: 15
+            - title: Guided Task - Continuous Integration and Automated Grading
+              page: gp1-jenkins
+              description: Review the feedback from Jenkins, the continuous integration system that we use for automated grading.
+              time: 15
+            - title: Conclusion
+              page: gp1-conclusion
+              description: Review the learning objectives and submit the assignment.
+              time: 15
+
+    - gp2:
+      id: GP2
+      title: Advanced OO Programming
+      directory: _gp2/
+      progressBar: on
+      objectives:   
+        - Implement and test a multi-class software system from a given set of requirements and design.
+        - Use inheritance, abstract classes, and interfaces to implement an object hierarchy in an OO system.
+        - Use software engineering best practices like test-driven development, code coverage, static analysis, version control, continuous integration, and documentation with supporting tooling to implement and test object-oriented systems.
+      tasks: 
+            - title: Guided Task - Guided Project 2 GitHub Repository
+              page: gp2-repo
+              description: Add your project from GP1 to your new GitHub repository for GP2.
+              time: 10
+            - title: Guided Task - Design a Hierarchy
+              page: gp2-hierarchy
+              description: Create a design for the Activity hierarchy to add Events to the WolfScheduler.
+              time: 10
+            - title: Guided Task - Extract a Super Class
+              page: gp2-super-class
+              description: Use Eclipse refactoring tools to create a super class for the Activity hierarchy.
+              time: 45
+            - title: Independent Task - Create Event
+              page: gp2-event
+              description: Create the Event class for holding information about other events on a student's schedule.
+              time: 45
+            - title: Guided Task - Run the Debugger
+              page: gp2-debugger
+              description: Use the Eclipse debugger to find and fix the fault behind a test failure.
+              time: 45
+            - title: Guided Task - Create ActivityRecordIO
+              page: gp2-activityrecordio
+              description: Create an IO file to support the new Activity hierarchy.
+              time: 45
+            - title: Independent Task - Update WolfScheduler
+              page: gp2-wolfscheduler
+              description: Update `WolfScheduler` to incorporate behavior for the new `Activity` hierarchy.
+              time: 120
+            - title: Independent Task - Update WolfSchedulerGUI
+              page: gp2-wolfschedulergui
+              description: Update WolfSchedulerGUI and run the system tests to ensure everything works together.
+              time: 90
+            - title: Independent Task - Submit Project
+              page: gp2-submit
+              description: Double check your implementation to ensure that you're meeting all expectations.
+              time: 30
+
+
+    - gp3:
+      id: GP3
+      title: Testing
+      directory: _gp3/
+      progressBar: on
+      objectives:   
+        - Use test driven development to solve a software problem.
+        - Revise and write system level tests.
+        - Write unit level tests.
+        - Use coverage metrics to identify and cover unexecuted paths.
+        - Use software engineering best practices like test-driven development, code coverage, static analysis, version control, continuous integration, and documentation with supporting tooling to implement and test object-oriented systems.
+      tasks: 
+            - title: Guided Task - Guided Project 3 GitHub Repository
+              page: gp3-repo
+              description: Add your project from GP2 to your new GitHub repository for GP3.
+              time: 10
+            - title: Independent Task - Write and Update System Test Plan
+              page: gp3-stp
+              description: Update the system test plan to incorporate the conflict functionality for the full WolfScheduler requirements.
+              time: 45
+            - title: Guided Task - Create Conflict Interface
+              page: gp3-conflict-interface
+              description: Create an interface to support the new time conflict checks.
+              time: 20
+            - title: Guided Task - Implement and Test ConflictException
+              page: gp3-conflictexception
+              description: Create a ConflictException to support your new Conflict interface.
+              time: 30
+            - title: Guided Task - Test Driven Development
+              page: gp3-tdd
+              description: Practice test driven development to improve the tests in the WolfScheduler project for the new conflict functionality.
+              time: 40
+            - title: Independent Task - Implement Conflict in Activity
+              page: gp3-activity
+              description: Incorporate the Conflict interface in the Activity hierarchy.
+              time: 60
+            - title: Independent Task - Coverage
+              page: gp3-coverage
+              description: Run your coverage tool and create high quality test cases to consider uncovered flows.
+              time: 45
+            - title: Independent Task - Update WolfScheduler
+              page: gp3-wolfscheduler
+              description: Update WolfScheduler to incorporate behavior for the new Conflict functionality.
+              time: 90
+            - title: Independent Task - Update WolfSchedulerGUI
+              page: gp3-wolfschedulergui
+              description: Update WolfSchedulerGUI and run the system tests to ensure everything works together.
+              time: 45
+            - title: Independent Task - Submit Project
+              page: gp3-submit
+              description: Double check your implementation to ensure that you're meeting all expectations.
+              time: 30

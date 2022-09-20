@@ -1,0 +1,43 @@
+{% assign extension = include.file | split: "." | last %}
+{% assign file = include.file | split: "/" | last %}
+{% assign fileName = file | split: "." | first %}
+
+
+
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <p class="h3 panel-title"><span class="glyphicon glyphicon-download no-bkgrnd"></span> Download</p>
+  </div>
+  <div class="panel-body">
+	<div class="media">
+	  <a class="pull-left" href="{{ include.file }}">
+		{% include icon.html type=extension width="75px" %}
+	  </a>
+	  <div class="media-body">
+		<a class="h4 media-heading" href="{{include.file}}">{{ include.file | split: "/" | last }}</a><br>
+		{% if extension == "java" %}	  
+		<button class="btn btn-info btn-lg" data-toggle="modal" data-target="#modal-{{fileName}}">Preview file content</button>
+		<div class="modal fade bs-modal-lg" id="modal-{{fileName}}" tabindex="-1" role="dialog" aria-labelledby="{{fileName}} Modal" aria-hidden="true">
+		  <div class="modal-dialog modal-lg">
+			<div class="modal-content">
+			  <div class="modal-header">
+			      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+				  {{fileName}}.{{extension}}
+			  </div>
+			  <div class="modal-body">
+{% capture fc %}
+```java
+{% include_relative {{include.file}} %}
+```
+{% endcapture %}
+{{ fc | markdownify }}
+			  </div>
+			</div>
+		  </div>
+		</div>
+		{% endif %}
+	  </div>
+    </div>
+  </div>
+</div>
+  

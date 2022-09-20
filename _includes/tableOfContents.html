@@ -1,0 +1,18 @@
+<div id="tableOfContents">
+<ul>
+{% assign pageOrder = site.data.pagegroups[include.pagegroup].order %}
+{% assign directory = site.data.pagegroups[include.pagegroup].directory %}
+{% for page in pageOrder | offset: 1 %}
+	{% assign currentPage = page | remove: "[" | remove: "]" | remove: '"' | lstrip | rstrip%}
+	{% for doc in site.documents %}
+		{% assign currentFileName = doc.path | split: "/" | last | remove: ".md" | lstrip | rstrip %}
+		{% if doc.path | contains: directory %}
+		    {% if currentFileName == currentPage %}
+				{% assign url = site.baseurl | append: doc.url %}
+			    <li><a href="{{ url }}">{{ doc.description | markdownify | remove: '<p>' | remove: '</p>' }}</a></li>
+		    {% endif %}
+	    {% endif %}
+	{% endfor %}
+{% endfor %}
+</ul>
+</div>

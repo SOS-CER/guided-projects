@@ -1,0 +1,134 @@
+<script>
+(function() {
+    // Improve performance by mapping IDs
+    var subContentIdToLibraryMap = {};
+    function findSubContentLibrary(id, params) {
+        for (var prop in params) {
+            if (!params.hasOwnProperty(prop)) {
+                continue;
+            }
+
+            if (prop === 'subContentId' && params[prop] === id) {
+                return params.library; // Found it
+            } else if (typeof params[prop] === 'object') {
+                // Look in next level
+                var result = findSubContentLibrary(id, params[prop]);
+                if (result) {
+                    return result;
+                }
+            }
+        }
+    }
+
+    if (window.H5P) {
+        H5P.jQuery(window).on('ready', function() {
+            H5P.externalDispatcher.on('xAPI', function(event) {
+			console.log(event);
+                try {
+                    if (!ga) {
+                        return;
+                    }
+                    // First we need to find the category.
+                    var category;
+
+                    // Determine content IDs
+                    var contentId = event.data.statement.object.definition.extensions['http://h5p.org/x-api/h5p-local-content-id'];
+                    var subContentId = event.data.statement.object.definition.extensions['http://h5p.org/x-api/h5p-subContentId'];
+
+
+                    if (subContentId) {
+                        if (subContentIdToLibraryMap[subContentId]) {
+                            // Fetch from cache
+                            category = subContentIdToLibraryMap[subContentId];
+                        } else {
+                            // Find
+                            category = findSubContentLibrary(subContentId, JSON.parse(H5PIntegration.contents['cid-' + contentId].jsonContent));
+                            if (!category) {
+                                return; // No need to continue
+                                // TODO: Remember that it wasnt found?
+                            }
+
+                            // Remember for next time
+                            subContentIdToLibraryMap[subContentId] = category;
+                        }
+                    } else {
+                        // Use main content library
+                        category = H5PIntegration.contents['cid-' + contentId].library;
+                    }
+
+                    // Strip version number
+                    category = category.split(' ', 2)[0];
+
+                    // Next we need to determine the action.
+                    var action = event.getVerb();
+
+                    if (action == 'answered') {
+                        // Now we need to find an unique label
+                        var label = contentId; // Title
+
+                        // Add subcontentID
+                        if (subContentId) {
+                            label += ' (' + subContentId + ')';
+                        }
+
+                        // Find value
+                        var value;
+
+                        // Use result if possible
+                        var result = event.data.statement.result;
+                        if (result) {
+                            // Calculate percentage
+                            value = 100 * result.score.raw / (result.score.max - result.score.min);
+                        }
+                        // ... or slide number
+                        if (action === 'Progressed') {
+                            var progress = event.data.statement.object.definition.extensions['http://id.tincanapi.com/extension/ending-point'];
+                            if (progress) {
+                                value = progress;
+                            }
+                        }
+                        // Validate number
+                        value = Number(value);
+                        if (isNaN(value)) {
+                            value = undefined;
+                        }
+
+						var choices = event.data.statement.object.definition.choices;
+						var responses = event.data.statement.result.response;				
+						var responseArray = responses.split("[,]");					
+						var responseString = "";
+						var i;
+						for( i = 0; i < responseArray.length; i++) {
+							var j;
+							for( j = 0; j < choices.length; j++) {
+								c = choices[j];
+								if(c['id'] == responseArray[i]) {
+									responseString += c['description']['en-US'].replace(/(\r\n|\n|\r)/gm,"") + "; ";
+								}
+							}
+						}
+						console.log("Response String: " + responseString);
+						
+						var questionText = event.data.statement.object.definition.description['en-US'].replace(/(\r\n|\n|\r)/gm,"");
+						
+						var email = $('#email').val();
+						email = email.replace("@ncsu.edu","");
+                        var url = "https://script.google.com/macros/s/AKfycbwSwZNxiZphFBWq3IoNRbQbW3_MNYaTBJq2UVSeJ22LOPcehXI/exec?callback=?";
+                        var o = {
+							"id": email,
+                            "label": label,
+                            "value": value,
+							"responses": responseString,
+							"question": questionText
+                        }
+                        var jqxhr = $.post( url, o);
+                    }
+                    ga('send', 'event', category, action, label, value);
+                } catch (err) {
+                    // No error handling
+                }
+            });
+        });
+    }
+})();
+</script>

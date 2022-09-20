@@ -1,0 +1,9 @@
+<div class="row">
+	  {% for item in include.data %}
+	    {% if include.newWindow %}
+		  {% include card.html item=item type=include.type newWindow="true" %}
+		{% else %}
+		  {% include card.html item=item type=include.type %}
+		{% endif %}
+      {% endfor %}	 
+</div>

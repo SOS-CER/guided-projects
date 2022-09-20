@@ -1,0 +1,170 @@
+---
+---
+/**********************
+Inspired by https://mademistakes.com/til/styling-language-specific-code-blocks/ 
+****************/
+$wolfpack-red: #CC0000;
+$wolfpack-black: #000000;
+$wolfpack-white: #FFFFFF;
+  
+$gray10: #F2F2F2;
+$gray25: #CCCCCC;
+$gray60: #666666;
+$gray90: #333333;
+  
+$reynoldsred: #990000;
+$pyromanflame: #D14905;
+$huntyellow: #FDD726;
+$genomicgreen: #7d8C1F;
+$innovationblue: #427E93;
+$bioindigo: #4156A1;
+
+/***************
+Variables for Styling Cards
+****************/
+.cardRow {
+    display: inline-block; 
+	margin: 0.5vw;
+}
+
+.card {
+  display: inline-block;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+  position: relative;
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
+  word-wrap: break-word;
+  
+  a {
+    color: white !important;
+	text-decoration: none !important;
+  }  
+  
+  h1 {
+	padding: 0px;
+	margin: 0px;
+	border-bottom:none;
+  }
+  
+  p {
+    margin: 0px;
+  }
+}
+
+/* staff card */
+.staffCard {
+  color: black; 
+  width: 12vw;
+  min-width: 100px;
+  height: 15vw;
+  min-height: 150px;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  padding: 0px;
+	
+  h1 {
+	text-align: center;
+    font-size: 1.5vw;
+	font-weight: bold;
+  }
+  
+  p {
+    text-align: center;
+	padding: 0px;
+	margin: 0px;
+	color: black;
+    font-size: .8vw;
+  }
+
+  img {
+	 display: block;
+     margin-left: auto;
+     margin-right: auto;
+     width: 100%;
+  }  
+}
+
+.largeCard {
+  width: 17vw;
+  min-width: 125px;
+  height: 17vw;
+  min-height: 125px;
+  
+  h1 {
+    font-size: 2.3vw;
+	font-weight: bold;
+    color: inherit;	
+  }
+  
+  p {
+    font-size: 1.3vw;
+  }
+}
+
+.smallCard {
+  width: 20vw;
+  min-width: 125px;
+  height: 7vw;
+  min-height: 125px;
+  
+  h1 {
+    font-size: 1.7vw;
+	font-weight: bold;
+    color: inherit;	
+  }
+  
+  p {
+    font-size: 1vw;
+  }
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8);
+}
+
+/* container */
+.cardContainer {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 98%;
+  padding: 0.5vw;
+  color: white; 
+}
+
+@media screen and (max-width: 470px) {
+    .cardRow {
+        display: inline-block;
+		max-width: 470px;
+    }
+    .card {
+        display:inline-block;
+		padding: 0px;
+	}
+	
+	.largeCard {
+	    h1 {
+		   font-size: 4vw;
+	    }	
+		p {
+		   font-size: 2.5vw;
+		}		
+    }
+	
+    .staffCard {
+		width: 15vw;
+		min-width: 100px;
+		height: 30vw;
+		min-height: 200px;	    
+        h1 {
+           font-size: 3.2vw;
+        }
+  
+        p {
+           font-size: 2.7vw;
+        }
+    }	
+}

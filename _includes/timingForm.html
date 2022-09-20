@@ -1,0 +1,103 @@
+{% assign labID = page.url | replace: '/', ',' | remove_first: ',' | split: ',' | first %}
+{% assign pageName = page.url | split: '/' | last | split: '.' | first %}
+			
+{% for item in site.data.tasks %}
+   {% assign lowerID = item.id | remove: ' ' | downcase %}
+   {% if labID == lowerID %}
+      {% for task in item.tasks %}
+	     {% if task.page == pageName %}
+		    {% assign taskTime = task.time %}
+		    {% break %}
+		 {% endif %}
+	  {% endfor %}
+   {% endif %}
+{% endfor %}
+{% capture form %}
+{% assign taskTime = taskTime %}
+
+{% assign halfTime = taskTime | divided_by: 2 | round %}
+{% assign quarterTime = taskTime | divided_by: 4 | round%}
+<div id="timeForm" class="hidden-print">
+<form id="test-form">
+  
+  <div>
+    <input id="pageURL" type="hidden" name="page" value="{{page.url}}">
+  </div>
+
+<div>
+<em>We estimated that this task would take {{taskTime}} minutes to complete.</em>
+  <div> 
+    <label class="radio-inline" for="timeRating-0">
+      <input type="radio" name="timeRating" id="timeRating-0" value="5" checked="checked">
+      I spent less than <strong>{{taskTime | minus: halfTime | minus: quarterTime }} minutes</strong> completing this task.
+    </label> 
+
+<br>
+    <label class="radio-inline" for="timeRating-1">
+      <input type="radio" name="timeRating" id="timeRating-1" value="4">
+      I spent about <strong>{{taskTime | minus: halfTime | minus: quarterTime }} to {{taskTime | minus: quarterTime}} minutes</strong> completing this task.
+    </label> 
+<br>
+    <label class="radio-inline" for="timeRating-2">
+      <input type="radio" name="timeRating" id="timeRating-2" value="3" checked>
+      I spent <strong>about {{taskTime | minus: quarterTime}} to {{taskTime | plus: quarterTime}} minutes</strong> completing this task.
+    </label> 
+<br>
+    <label class="radio-inline" for="timeRating-3">
+      <input type="radio" name="timeRating" id="timeRating-3" value="2">
+      I spent about <strong>{{taskTime | plus: quarterTime}} to {{taskTime | plus: halfTime | plus: quarterTime}} minutes</strong> completing this task.
+    </label> 
+<br>
+    <label class="radio-inline" for="timeRating-4">
+      <input type="radio" name="timeRating" id="timeRating-4" value="1">
+      I spent more than <strong>{{taskTime | plus: halfTime | plus: quarterTime}} minutes</strong> completing this task.
+    </label>
+  </div>
+</div>
+<div>
+<input type="textbox" size="40" id="timeEstimate" name="timeEstimate" placeholder="(Optional) In minutes, how long did it take?">
+</div>
+<div>
+<button type="submit" class="btn btn-warning" id="submit-form">Submit</button>
+</div>
+</form>
+</div>
+<div id="thanks" style="display:none;">Thank you for providing feedback!</div>
+<br><br>
+{% endcapture %}
+<div class="row">
+<div class="col-xs-12">
+{% include callout.html type="tools" icon="stopwatch" content=form title="(Optional) How long did it take?" %}
+</div></div>
+
+<script type="text/javascript">
+var $form = $('form#test-form'),
+    url = 'https://script.google.com/a/ncsu.edu/macros/s/AKfycbzVdk5DFSZmA8WdEm1UHGhN7ZHI5LcC5l7OXm0r/exec';
+
+$('#submit-form').on('click', function(e) {
+
+  var page = $("#pageURL").val();
+  var id = $("#email").val();
+  id = id.replace("@ncsu.edu","");
+  var option = $('[name="timeRating"]:checked').val();
+  var time = $("#timeEstimate").val();
+  var o = {
+	"id": id,
+	"page": page,
+	"timeRating": option,
+	"timeEstimate": time
+	}
+
+  e.preventDefault();
+  var jqxhr = $.post( url, o, function() {
+		console.log(e);
+	  	$('#thanks').css('display','block');
+		$('#timeForm').hide();
+	}
+  );
+  
+  $('#thanks').css('display','block');
+  $('#timeForm').hide();
+  
+});
+</script>

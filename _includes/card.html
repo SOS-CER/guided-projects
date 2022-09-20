@@ -1,0 +1,35 @@
+{% assign item=include.item %}
+{% if include.type == "staff" %}
+<div class="col-sm-4 col-md-3">
+    <div class="thumbnail" style="margin: 0px auto;">
+      <img src="{{site.baseurl}}/assets/images/staff/{{item.image | default: 'noPic.png'}}" style="width:150px;margin-left:0px;" alt="{{item.name}} Photo">
+      <div class="caption">
+        <h3>{{item.name}}</h3>
+        <p>{{item.title}}</p>
+      </div>
+    </div>
+</div>
+{% else if include.type == "sections" %}
+<div class="col-sm-4 col-md-3">
+  <a href="{{item.url}}" {% if include.newWindow %}target="_blank"{% endif %}>
+    <div class="thumbnail" style="color:white;height:150px;background-color:#{{item.color | default: 'CC0000' }};">
+      <div class="caption">
+        <h3>{{item.name}}</h3>
+        <p>{{item.description}}</p>
+		<p>{{item.instructor}}</p>
+      </div>
+    </div>
+  </a>
+</div>   
+{% else %}
+<div class="col-sm-4 col-md-3">
+  <a href="{{item.url}}" {% if include.newWindow %}target="_blank"{% endif %}>
+    <div class="thumbnail" style="color:white;height:150px;background-color:#{{item.color | default: 'CC0000' }};">
+      <div class="caption">
+        <h3>{{item.name}}</h3>
+        <p>{{item.description}}</p>
+      </div>
+    </div>
+  </a>
+</div>  
+{% endif %}
