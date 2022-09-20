@@ -1,8 +1,8 @@
-organization: engr-csc216
-repository: engr-csc216/guided-projects
+organization: sos-cer.github.io
+repository: sos-cer.github.io//guided-projects
 contact: sarah_heckman@ncsu.edu
 repo: guided-projects
-baseurl: /engr-csc216/guided-projects
+baseurl: /sos-cer.github.io/guided-projects
 
 markdown: kramdown
 kramdown:
