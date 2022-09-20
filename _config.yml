@@ -2,7 +2,7 @@ organization: SOS-CER
 repository: SOS-CER/guided-projects
 contact: sarah_heckman@ncsu.edu
 repo: guided-projects
-baseurl: /sos-cer.github.io/guided-projects
+baseurl: https://sos-cer.github.io/guided-projects
 
 markdown: kramdown
 kramdown:
